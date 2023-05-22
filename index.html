@@ -1,39 +1,37 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title id="title">Mon Portfolio</title>
+  <title id="title">My Portfolio</title>
   <link rel="icon" type="image/png" href="Icon/icon.png" />
   <link rel="stylesheet" href="portfolio.css">
-  <script src="portfolio.js" data-lang="fr"></script>
+  <script src="portfolio.js" data-lang="en"></script>
 </head>
 <body>
   <header>
-    <h1 id="headerTitle">Mon Portfolio</h1>
+    <h1 id="headerTitle">My Portfolio</h1>
     <div class="headerMenu">
-      <a id="headerAboutMe" class="selected aboutMe" href="#">A propos de moi</a>
-      <a id="headerProjects" class="projects" href="#">Projets</a>
-      <a id="headerPath" class="path" href="#">Parcours</a>
-      <a id="headerSkills" class="skills" href="#">Compétences</a>
+      <a id="headerAboutMe" class="selected aboutMe" href="#">About me</a>
+      <a id="headerProjects" class="projects" href="#">Projects</a>
+      <a id="headerPath" class="path" href="#">Path</a>
+      <a id="headerSkills" class="skills" href="#">Skills</a>
     </div>
   </header>
 
   <main>
     <div class="content aboutMe">
-      <h2 id="aboutTitle">À propos de moi</h2>
+      <h2 id="titleAboutMe">About me</h2>
       <p id="aboutText">
-        Bonjour et bienvenue sur mon portfolio !
-        Je suis un étudiant en école d'ingénieur informatique en alternance passionné de technologie, 
-        à la recherche de nouvelles opportunités pour mettre en pratique mes compétences et développer mes connaissances. 
-        Au travers de ce portfolio, je partage mes projets, mes réalisations et mes expériences professionnelles, reflétant mon parcours. 
-        Explorez mon travail et découvrez comment j'ai pu contribuer à des projets concrets, acquérir de nouvelles compétences et relever des défis passionnants. 
-        Je suis ouvert aux collaborations et aux opportunités d'apprentissage, 
-        alors n'hésitez pas à me contacter si vous souhaitez en savoir plus sur mes réalisations ou discuter de projets potentiels.
-        Merci de visiter mon portfolio et j'espère avoir l'occasion de collaborer avec vous.
+        Hello and welcome to my portfolio! 
+        I am a computer engineering student pursuing an alternate education path, passionate about technology. I am constantly seeking new opportunities to apply my skills and expand my knowledge. 
+        Within this portfolio, I share my projects, achievements, and professional experiences, which reflect my journey. Explore my work and discover how I have contributed to tangible projects, acquired new skills, and taken on exciting challenges. 
+        I am open to collaborations and learning opportunities, so feel free to contact me if you would like to learn more about my accomplishments or discuss potential projects. Thank you for visiting my portfolio, and I hope to have the opportunity to collaborate with you.
+        Thank you for visiting my portfolio and I look forward to working with you.
       </p>
     </div>
+
     <div class="content projects" hidden>
-      <h2 id="projectsTitle">Mes projets</h2>
+      <h2 id="titleProject">My projects</h2>
       <ul>
         <li>
           <h3>Projet 1</h3>
@@ -45,18 +43,25 @@
         </li>
       </ul>
     </div>
-    <div class="content path" hidden>PATH</div>
-    <div class="content skills" hidden>SKILLS</div>
+
+    <div class="content path" hidden>
+      <h2 id="titlePath">My path</h2>
+    </div>
+
+    <div class="content skills" hidden>
+      <h2 id="titleSkills">My skills</h2>
+    </div>
+
     <div class="contact-bar">
       <div class="button">
         <button id="languageButton" onclick="toggleLanguage()">
-          <img id="languageIcon" src="Icon/fr.png"> <p id="languageButtonText">Français</p>
+          <img id="languageIcon" src="Icon/en.png"> <p id="languageButtonText">English</p>
         </button>
       </div>
       <h2 id="contactTitle">Contact</h2>
-      <p id="name">Nom : Mathieu MAION</p>
+      <p id="name">Name : Mathieu MAION</p>
       <p id="email">Email : mathieu.maion0@gmail.com</p>
-      <p id="phone">Téléphone : 06 15 80 45 34</p>
+      <p id="phone">Phone : (+33) 06 15 80 45 34</p>
       <div class="social-icons">
       <a href="https://github.com/Mathieu-Maion" class="social-media"><img src="Icon/github.svg" alt="Github"><p>Mathieu-Maion</p></a>
       <a href="https://discordapp.com/users/272072909168705546" class="social-media"><img src="Icon/discord.svg" alt="Discord"><p>Mayonni#2002</p></a>

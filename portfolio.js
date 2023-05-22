@@ -16,8 +16,8 @@ window.addEventListener('DOMContentLoaded', () => {
         event.target.classList.add("selected");
         const contentToShow = document.getElementsByTagName("main")[0].getElementsByClassName(targetElementClass)[0];
         const contentToHide = document.getElementsByTagName("main")[0].getElementsByClassName(selectedElementClass)[0];
-        contentToShow.removeAttribute("hidden");
         contentToHide.setAttribute("hidden", true);
+        contentToShow.removeAttribute("hidden");
       }
     });
   }
