@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title id="title">My Portfolio</title>
-  <link rel="icon" type="image/png" href="Icon/icon.png" />
+  <link rel="icon" type="image/png" href="images/icon.png" />
   <link rel="stylesheet" href="portfolio.css">
   <script src="portfolio.js" data-lang="en"></script>
 </head>
@@ -53,20 +53,26 @@
     </div>
 
     <div class="contact-bar">
-      <div class="button">
-        <button id="languageButton" onclick="toggleLanguage()">
-          <img id="languageIcon" src="Icon/en.png"> <p id="languageButtonText">English</p>
-        </button>
+      <div class="control">
+        <div class="button">
+          <button id="languageButton" onclick="toggleLanguage()">
+            <img id="languageIcon" src="images/en.png"> <p id="languageButtonText">English</p>
+          </button>
+        </div>
+        <img id="disk" title="Titre: Guazu
+Auteur: Guazu
+Licence: https://creativecommons.org/licenses/by-sa/3.0/deed.fr">
+        <audio src="ressources/guazu.mp3" id="audio"></audio>
       </div>
       <h2 id="contactTitle">Contact</h2>
       <p id="name">Name : Mathieu MAION</p>
       <p id="email">Email : mathieu.maion0@gmail.com</p>
       <p id="phone">Phone : (+33) 06 15 80 45 34</p>
       <div class="social-icons">
-      <a href="https://github.com/Mathieu-Maion" class="social-media"><img src="Icon/github.svg" alt="Github"><p>Mathieu-Maion</p></a>
-      <a href="https://discordapp.com/users/272072909168705546" class="social-media"><img src="Icon/discord.svg" alt="Discord"><p>Mayonni#2002</p></a>
+      <a href="https://github.com/Mathieu-Maion"><img src="images/github.svg" alt="Github"><p>Mathieu-Maion</p></a>
+      <a href="https://discordapp.com/users/272072909168705546"><img src="images/discord.svg" alt="Discord"><p>Mayonni#2002</p></a>
       </div>
-      <img id="contact-img" src="Icon/me.jpg">
+      <img id="contact-img" src="images/me.jpg">
     </div>
   </main>
 </body>

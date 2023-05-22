@@ -1,19 +1,24 @@
 var translations = {};
+var running = false;
+var musicPlayer, disk;
 
 window.addEventListener('DOMContentLoaded', () => {
-  const textElement = document.getElementsByTagName('main')[0];
-  textElement.style.animationPlayState = 'running';
-
+  musicPlayer = document.getElementById('audio');
+  disk = document.getElementById('disk');
   const header = document.getElementsByTagName('header')[0];
   const a = header.getElementsByTagName('a');
+
   for(var i = 0; i < a.length ; i++){
     a[i].addEventListener("click", (event) => {
       if(!event.target.classList.contains("selected")){
         const selectedElement = header.getElementsByClassName("selected")[0];
         selectedElement.classList.remove("selected");
-        const selectedElementClass = selectedElement.classList[0];
+
         const targetElementClass = event.target.classList[0];
+        const selectedElementClass = selectedElement.classList[0];
+
         event.target.classList.add("selected");
+
         const contentToShow = document.getElementsByTagName("main")[0].getElementsByClassName(targetElementClass)[0];
         const contentToHide = document.getElementsByTagName("main")[0].getElementsByClassName(selectedElementClass)[0];
         contentToHide.setAttribute("hidden", true);
@@ -21,11 +26,21 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  disk.addEventListener("click", () => {
+    if(running) stopMusic();
+    else resumeMusic();
+  });
+
+
+  musicPlayer.addEventListener("ended", () => {
+    musicPlayer.play();
+  })
 });
 
 
 function loadTranslations(lang) {
-  fetch('translations.json')
+  fetch('ressources/translations.json')
     .then(response => response.json())
     .then(data => {
       translations[lang] = data[lang];
@@ -51,8 +66,18 @@ function toggleLanguage() {
   else applyTranslations(newLang);
 
   document.documentElement.setAttribute('lang', newLang);
-  document.getElementById('languageIcon').src = `Icon/${newLang}.png`;
+  document.getElementById('languageIcon').src = `images/${newLang}.png`;
 }
 
+function stopMusic(){
+  disk.classList.remove("play");
+  running = false;
+  musicPlayer.pause();
+}
 
+function resumeMusic(){
+  disk.classList.add("play");
+  running = true;
+  musicPlayer.play();
+}
 
