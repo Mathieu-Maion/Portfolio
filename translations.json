@@ -1,0 +1,35 @@
+{
+    "fr": {
+      "title": "Mon Portefolio",
+      "headerTitle": "Mon Portefolio",
+      "aboutTitle": "À propos de moi",
+      "aboutText": "Bonjour et bienvenue sur mon portefolio ! Je suis un étudiant en école d'ingénieur informatique en alternance passionné de technologie, à la recherche de nouvelles opportunités pour mettre en pratique mes compétences et développer mes connaissances. Au travers de ce portfolio, je partage mes projets, mes réalisations et mes expériences professionnelles, reflétant mon parcours. Explorez mon travail et découvrez comment j'ai pu contribuer à des projets concrets, acquérir de nouvelles compétences et relever des défis passionnants. Je suis ouvert aux collaborations et aux opportunités d'apprentissage, alors n'hésitez pas à me contacter si vous souhaitez en savoir plus sur mes réalisations ou discuter de projets potentiels. Merci de visiter mon portefolio et j'espère avoir l'occasion de collaborer avec vous.",
+      "projectsTitle": "Mes projets",
+      "contactTitle": "Contact",
+      "languageButtonText": "Français",
+      "name": "Nom : Mathieu MAION",
+      "email": "Email : mathieu.maion0@gmail.com",
+      "phone": "Téléphone : 06 15 80 45 34",
+      "headerAboutMe": "À propos de moi",
+      "headerProjects": "Projets",
+      "headerPath": "Parcours",
+      "headerSkills": "Compétences"
+    },
+    "en": {
+      "title": "My Portfolio",
+      "headerTitle": "My Portfolio",
+      "aboutTitle": "About Me",
+      "aboutText": "Hello and welcome to my portfolio! I am a computer engineering student pursuing an alternate education path, passionate about technology. I am constantly seeking new opportunities to apply my skills and expand my knowledge. Within this portfolio, I share my projects, achievements, and professional experiences, which reflect my journey. Explore my work and discover how I have contributed to tangible projects, acquired new skills, and taken on exciting challenges. I am open to collaborations and learning opportunities, so feel free to contact me if you would like to learn more about my accomplishments or discuss potential projects. Thank you for visiting my portfolio, and I hope to have the opportunity to collaborate with you.",
+      "projectsTitle": "My Projects",
+      "contactTitle": "Contact",
+      "languageButtonText": "English",
+      "name": "Name : Mathieu MAION",
+      "email": "Email : mathieu.maion0@gmail.com",
+      "phone": "Phone : (+33) 06 15 80 45 34",
+      "headerAboutMe": "About me",
+      "headerProjects": "Projects",
+      "headerPath": "Path",
+      "headerSkills": "Skills"
+    }
+  }
+  

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title id="title">Mon Portfolio</title>
+  <link rel="icon" type="image/png" href="Icon/icon.png" />
+  <link rel="stylesheet" href="portfolio.css">
+  <script src="portfolio.js" data-lang="fr"></script>
+</head>
+<body>
+  <header>
+    <h1 id="headerTitle">Mon Portfolio</h1>
+    <div class="headerMenu">
+      <a id="headerAboutMe" class="selected aboutMe" href="#">A propos de moi</a>
+      <a id="headerProjects" class="projects" href="#">Projets</a>
+      <a id="headerPath" class="path" href="#">Parcours</a>
+      <a id="headerSkills" class="skills" href="#">Compétences</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="content aboutMe">
+      <h2 id="aboutTitle">À propos de moi</h2>
+      <p id="aboutText">
+        Bonjour et bienvenue sur mon portfolio !
+        Je suis un étudiant en école d'ingénieur informatique en alternance passionné de technologie, 
+        à la recherche de nouvelles opportunités pour mettre en pratique mes compétences et développer mes connaissances. 
+        Au travers de ce portfolio, je partage mes projets, mes réalisations et mes expériences professionnelles, reflétant mon parcours. 
+        Explorez mon travail et découvrez comment j'ai pu contribuer à des projets concrets, acquérir de nouvelles compétences et relever des défis passionnants. 
+        Je suis ouvert aux collaborations et aux opportunités d'apprentissage, 
+        alors n'hésitez pas à me contacter si vous souhaitez en savoir plus sur mes réalisations ou discuter de projets potentiels.
+        Merci de visiter mon portfolio et j'espère avoir l'occasion de collaborer avec vous.
+      </p>
+    </div>
+    <div class="content projects" hidden>
+      <h2 id="projectsTitle">Mes projets</h2>
+      <ul>
+        <li>
+          <h3>Projet 1</h3>
+          <p>Description du projet 1.</p>
+        </li>
+        <li>
+          <h3>Projet 2</h3>
+          <p>Description du projet 2.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="content path" hidden>PATH</div>
+    <div class="content skills" hidden>SKILLS</div>
+    <div class="contact-bar">
+      <div class="button">
+        <button id="languageButton" onclick="toggleLanguage()">
+          <img id="languageIcon" src="Icon/fr.png"> <p id="languageButtonText">Français</p>
+        </button>
+      </div>
+      <h2 id="contactTitle">Contact</h2>
+      <p id="name">Nom : Mathieu MAION</p>
+      <p id="email">Email : mathieu.maion0@gmail.com</p>
+      <p id="phone">Téléphone : 06 15 80 45 34</p>
+      <div class="social-icons">
+      <a href="https://github.com/Mathieu-Maion" class="social-media"><img src="Icon/github.svg" alt="Github"><p>Mathieu-Maion</p></a>
+      <a href="https://discordapp.com/users/272072909168705546" class="social-media"><img src="Icon/discord.svg" alt="Discord"><p>Mayonni#2002</p></a>
+      </div>
+      <img id="contact-img" src="Icon/me.jpg">
+    </div>
+  </main>
+</body>
+</html>
