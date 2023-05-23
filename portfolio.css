@@ -288,6 +288,9 @@ main {
 .projet {
   margin-bottom: 30px;
   overflow: hidden;
+  background-color: #fff2d9;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .projet h3 {
@@ -304,6 +307,20 @@ main {
 .projet p {
   font-size: 16px;
   line-height: 1.5;
+}
+
+.projet span {
+  border: solid 2px #0094ff;
+  color: white;
+  font-size: 14px;
+  border-radius: 10px;
+  background-color: #3badff;
+  padding: 3px;
+  margin-right: 5px;
+}
+
+.projet .theme{
+  margin: 15px 0;
 }
 
 .projet .images{
