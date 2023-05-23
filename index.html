@@ -13,7 +13,7 @@
     <div class="headerMenu">
       <a id="headerAboutMe" class="selected aboutMe" href="#">About me</a>
       <a id="headerProjects" class="projects" href="#">Projects</a>
-      <a id="headerPath" class="path" href="#">Path</a>
+      <a id="headerPath" class="path" href="#">Curriculum</a>
       <a id="headerSkills" class="skills" href="#">Skills</a>
     </div>
   </header>
@@ -21,59 +21,173 @@
   <main>
     <div class="content aboutMe">
       <h2 id="titleAboutMe">About me</h2>
-      <p id="aboutText">
-        Hello and welcome to my portfolio! 
-        I am a computer engineering student pursuing an alternate education path, passionate about technology. I am constantly seeking new opportunities to apply my skills and expand my knowledge. 
-        Within this portfolio, I share my projects, achievements, and professional experiences, which reflect my journey. Explore my work and discover how I have contributed to tangible projects, acquired new skills, and taken on exciting challenges. 
-        I am open to collaborations and learning opportunities, so feel free to contact me if you would like to learn more about my accomplishments or discuss potential projects. Thank you for visiting my portfolio, and I hope to have the opportunity to collaborate with you.
-        Thank you for visiting my portfolio and I look forward to working with you.
-      </p>
+      <div class="contentAboutMe">
+        <img id="photoMe" src="images/me.jpg">
+        <p id="aboutText">
+          Hello and welcome to my portfolio! 
+          I am a computer engineering student pursuing an alternate education path, passionate about technology. I am constantly seeking new opportunities to apply my skills and expand my knowledge. 
+          Within this portfolio, I share my projects, achievements, and professional experiences, which reflect my journey. Explore my work and discover how I have contributed to tangible projects, acquired new skills, and taken on exciting challenges. 
+          I am open to collaborations and learning opportunities, so feel free to contact me if you would like to learn more about my accomplishments or discuss potential projects. Thank you for visiting my portfolio, and I hope to have the opportunity to collaborate with you.
+          Thank you for visiting my portfolio and I look forward to working with you.
+        </p>
+      </div>
     </div>
 
     <div class="content projects" hidden>
       <h2 id="titleProject">My projects</h2>
-      <ul>
-        <li>
-          <h3>Projet 1</h3>
-          <p>Description du projet 1.</p>
-        </li>
-        <li>
-          <h3>Projet 2</h3>
-          <p>Description du projet 2.</p>
-        </li>
-      </ul>
+
+      <div class="projet">
+        <h3>Projet 1</h3>
+        <div class="images">
+          <img src="images/CESI.png" alt="Image du projet 1">
+          <img src="images/CESI.png" alt="Image du projet 1">
+        </div>
+        <p>Description du projet 1...</p>
+      </div>
+      
+      <div class="projet">
+        <h3>Projet 2</h3>
+        <img src="images/CESI.png" alt="Image du projet 2">
+        <p>Description du projet 2...</p>
+      </div>
     </div>
 
+
+
     <div class="content path" hidden>
-      <h2 id="titlePath">My path</h2>
+      <h2 id="titlePath">My curriculum</h2>
+
+      <div class="contentPathContainer">
+        <img src="images/CESI.png">
+        <div class="contentPathInfo">
+          <a id="pathInfoCESITitle" href="https://nancy.cesi.fr/">CESI école d'ingénieurs</a>
+          <p>2022-2025</p>
+          <p id="pathInfoCESIFormation">Computer engineer as work-study</p>
+          <p id="pathInfoCESICity">France Vandœuvre-lès-Nancy, 6 Rue Bois du Chêne le Loup</p>
+          <a id="pathInfoCompany" href="https://www.predict.fr/">Company : Predict</a>
+          <p id="pathInfoCESIDesc">
+            Currently in computer engineering formation, I develop both advanced computer skills and expertise in team work. 
+            By specializing in areas such as programming, networking and computer security, I gain in-depth technical expertise. 
+            At the same time, the group projects in which I participate allow me to improve my interpersonal skills, such as communication, 
+            collaboration and team problem-solving, essential qualities for success in the field of computer engineering.
+          </p>
+        </div>
+      </div>
+
+      <div class="contentPathContainer">
+        <img src="images/IUT.jpg">
+        <div class="contentPathInfo">
+          <a id="pathInfoIUTTitle" href="https://iut-charlemagne.univ-lorraine.fr/">University institute of technology Nancy-Charlemagne</a>
+          <p>2020-2022</p>
+          <p id="pathInfoIUTFormation">Computer science diploma specialized in mathematics for engineers</p>
+          <p id="pathInfoIUTCity">France Nancy, 2Ter Bd Charlemagne</p>
+          <p id="pathInfoIUTDesc">
+            The computer science with a specialty in mathematics for engineering formation allowed me to develop in-depth computer skills 
+            and work effectively as a team. I have acquired expertise in areas such as programming, databases and software design, 
+            while collaborating with my peers on concrete projects. This experience has enabled me not only to strengthen my technical skills, 
+            but also to develop my communication, problem-solving and collaborative skills, which are essential in the professional world of IT.
+          </p>
+        </div>
+      </div>
+
+      <div class="contentPathContainer">
+        <img src="images/Poincare.jpg">
+        <div class="contentPathInfo">
+          <a id="pathInfoPoincareTitle" href="https://lycee-poincare.fr/">Highschool Henri Poincaré</a>
+          <p>2017-2020</p>
+          <p id="pathInfoPoincareFormation">Scientific baccalaureate with mathematics specialization</p>
+          <p id="pathInfoPoincareCity">France Nancy</p>
+          <p id="pathInfoPoincareDesc">
+            This formation has enabled me to develop the ability to work rigorously, 
+            analyze complex problems, and apply mathematical methods to solve real-life situations. 
+            These skills have proven valuable to me in various fields, including sciences, engineering, and computer science.   
+          </p>
+        </div>
+      </div>
     </div>
+
+
 
     <div class="content skills" hidden>
       <h2 id="titleSkills">My skills</h2>
+      <div class="competences">
+
+        <div class="contentSkillsContainer">
+          <h2 id="pathSkillsWeb">Web</h2>
+          <ul>
+            <li><img src="images/html.svg" alt="HTML Icon"><span>HTML</span>
+            </li>
+            <li><img src="images/js.svg" alt="JavaScript Icon"><span>JavaScript</span></li>
+            <li><img src="images/css.svg" alt="CSS Icon"><span>CSS</span></li>
+            <li><img src="images/php.svg" alt="PHP Icon"><span>PHP</span></li>
+          </ul>
+        </div>
+
+        <div class="contentSkillsContainer">
+          <h2 id="pathSkillsProgrammingLanguages">Programming languages</h2>
+          <ul>
+            <li><img src="images/csharp.svg" alt="C# Icon"><span>C#</span></li>
+            <li><img src="images/java.svg" alt="Java Icon"><span>Java</span></li>
+            <li><img src="images/python.svg" alt="Python Icon"><span>Python</span></li>
+            <li><img src="images/scala.svg" alt="Scala Icon"><span>Scala</span></li>
+          </ul>
+        </div>
+
+        <div class="contentSkillsContainer">
+          <h2 id="pathSkillsDB">Database</h2>
+          <ul>
+            <li><img src="images/sql.svg" alt="SQL Icon"><span>SQL</span></li>
+            <li><img src="images/mysql.svg" alt="MySQL Icon"><span>MySQL</span></li>
+            <li><img src="images/postgresql.svg" alt="PostGreSQL Icon"><span>PostGreSQL</span></li>
+            <li><img src="images/dbeaver.svg" alt="Dbeaver Icon"><span>DBeaver</span></li>
+          </ul>
+        </div>
+
+        <div class="contentSkillsContainer">
+          <h2 id="pathSkillsEnvironment">Environment</h2>
+          <ul>
+            <li><img src="images/windows.svg" alt="Windows Icon"><span>Windows</span></li>
+            <li><img src="images/github.svg" alt="Github Icon"><span>Github</span></li>
+            <li><img src="images/visual.svg" alt="Visual Studio Icon"><span>Visual Studio 2022</span></li>
+            <li><img src="images/azure.svg" alt="AzureDevOps Icon"><span>AzureDevOps</span></li>
+          </ul>
+        </div>
+
+        <div class="contentSkillsContainer">
+          <h2 id="pathSkillsLanguages">Spoken languages</h2>
+          <ul>
+            <li><img src="images/fr.png" alt="france Icon"><span id="french">French - Native</span></li>
+            <li><img src="images/en.png" alt="english Icon"><span id="english">English - 840 TOEIC (B2)</span></li>
+            <li><img src="images/ge.png" alt="german Icon"><span id="german">German - A2</span></li>
+          </ul>
+        </div>
+
+      </div>
     </div>
 
+
+
     <div class="contact-bar">
-      <div class="control">
-        <div class="button">
-          <button id="languageButton" onclick="toggleLanguage()">
-            <img id="languageIcon" src="images/en.png"> <p id="languageButtonText">English</p>
-          </button>
-        </div>
-        <img id="disk" title="Titre: Guazu
-Auteur: Guazu
-Licence: https://creativecommons.org/licenses/by-sa/3.0/deed.fr">
-        <audio src="ressources/guazu.mp3" id="audio"></audio>
-      </div>
       <h2 id="contactTitle">Contact</h2>
-      <p id="name">Name : Mathieu MAION</p>
-      <p id="email">Email : mathieu.maion0@gmail.com</p>
-      <p id="phone">Phone : (+33) 06 15 80 45 34</p>
       <div class="social-icons">
-      <a href="https://github.com/Mathieu-Maion"><img src="images/github.svg" alt="Github"><p>Mathieu-Maion</p></a>
-      <a href="https://discordapp.com/users/272072909168705546"><img src="images/discord.svg" alt="Discord"><p>Mayonni#2002</p></a>
+        <a href="#"><img src="images/user.svg" alt="Name"><p id="name">Mathieu MAION</p></a>
+        <a href="http://www.ville-dombasle.fr/"><img src="images/localisation.svg" alt="City"><p id="City">Dombasle-sur-Meurthe</p></a>
+        <a href="mailto:mathieu.maion0@gmail.com"><img src="images/gmail.svg" alt="Email"><p id="email">mathieu.maion0@gmail.com</p></a>
+        <a href="#"><img src="images/phone.svg" alt="Phone"><p id="phone">(+33) 6 15 80 45 34</p></a>
+        <a href="https://github.com/Mathieu-Maion"><img src="images/github.svg" alt="Github"><p>Mathieu-Maion</p></a>
+        <a href="#" id="CV" onclick="showCV()"><img id="CVIcon" src="images/downloadPDF.png"><p id="CVText">Resume</p></a>
+        <a href="https://leliteaucesi.fr/"><img src="images/friend.png"><p id="Otherportfolio">My friends portfolio !</p></a>
       </div>
-      <img id="contact-img" src="images/me.jpg">
+      <h2 id="contactControl">Control</h2>
+      <div class="button">
+        <button id="languageButton" onclick="toggleLanguage()"><img id="languageIcon" src="images/en.png"> <p id="languageButtonText">English</p></button>
+        <div class="center"></div>
+      </div>
+      
     </div>
+
+
+
   </main>
 </body>
 </html>

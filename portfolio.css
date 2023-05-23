@@ -7,6 +7,7 @@ body {
 
 h2 {
   font-size: 30px;
+  margin-bottom: 0;
 }
 
 header {
@@ -16,6 +17,9 @@ header {
   text-align: center;
   color: #fff;
   background-color: #333;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
   .headerMenu {
@@ -51,8 +55,8 @@ header {
 
   #headerTitle {
     font-size: 35px;
-    transform: scale(0.9);
-    animation: scale 2s forwards;
+    /*transform: scale(0.9);
+    animation: scale 2s forwards;*/
     margin: 10px 0;
   }
 
@@ -68,9 +72,54 @@ main {
     animation: slide-in-from-left 2s ease-in-out;
   }
 
+  .contentAboutMe {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contentAboutMe img{
+    margin-right: 20px;
+  }
+
+  .contentPathContainer {
+    background-color: #fff2d9;
+    border-radius: 10px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contentPathContainer img {
+    height: 350px;
+    width: auto;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .contentPathContainer a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .contentPathInfo {
+    padding: 20px;
+    height: 310px;
+    overflow-y: auto;
+  }
+
+  .content > h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  #pathInfoCompany {
+    font-weight: normal;
+    font-size: 17px;
+  }
 
 
-/* SIDEBAR */
+/* ======================================== SIDEBAR ======================================== */
 
 .contact-bar {
   position: fixed;
@@ -78,64 +127,47 @@ main {
   right: 0;
   background-color: #f2f2f2;
   width: 270px;
-  padding: 20px;
+  padding: 0 20px;
   height: 100vh;
   z-index: 1; 
+  overflow-y: auto;
 }
 
-  .control {
+  .contact-bar button {
+    height: 50px;
+    width: 170px;
+    padding: 5px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
     display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+    flex-direction: row;  
+    align-items: center;
+    margin: 10px auto;
   }
 
-    #languageButton {
-      width: 170px;
-      padding: 5px 20px;
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 20px;
-      font-weight: bold;
-      display: flex;
-      flex-direction: row;  
-      align-items: center;
-      margin: auto;
-    }
+  .contact-bar button:hover {
+    background-color: #0056b3;
+  }
 
-    #languageButton:hover {
-      background-color: #0056b3;
-    }
+  .contact-bar button > img {
+    width: auto;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
 
-    #languageIcon {
-      width: auto;
-      height: 40px;
-      vertical-align: middle;
-      margin-right: 5px;
-    }
+  #languageButtonText {
+    margin: auto;
+  }
 
-    #languageButtonText {
-      margin: auto;
-    }
-
-    #disk{
-      position: relative;
-      display: block;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      background-image: url('images/Vinyl.png');
-      background-size: cover;
-      animation: rotate 10s linear infinite;
-      animation-play-state: paused;
-    }
-
-    #disk.play{
-      animation-play-state: running;
-    }
+  #contactTitle {
+    margin-bottom: 0;
+  }
 
 
   .social-icons {
@@ -162,9 +194,7 @@ main {
     margin-right: 5px;
   }
 
-  
-
-  #contact-img {
+  #photoMe {
     height: auto;
     width: 270px;
   }
@@ -203,3 +233,90 @@ main {
 
 
 
+
+.competences {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.competences h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.competences ul {
+  list-style: none;
+  padding: 0;
+}
+
+.competences li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  transition: all .3s ease-out;
+}
+
+.competences li:hover {
+  transform: translate(5px, 0);
+}
+
+.competences img {
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+}
+
+.competences span {
+  font-size: 18px;
+}
+
+.contentSkillsContainer {
+  background-color: #fff2d9;
+  border-radius: 10px;
+  padding: 20px;
+  flex-basis: 300px;
+  margin: 10px;
+}
+
+
+
+.projet {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.projet h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.projet img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.projet p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.projet .images{
+  display: flex;
+  flex-direction: row;
+}
+
+.projet .images img {
+  height: 300px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.center {
+  text-align: center;
+}

@@ -1,10 +1,6 @@
 var translations = {};
-var running = false;
-var musicPlayer, disk;
 
 window.addEventListener('DOMContentLoaded', () => {
-  musicPlayer = document.getElementById('audio');
-  disk = document.getElementById('disk');
   const header = document.getElementsByTagName('header')[0];
   const a = header.getElementsByTagName('a');
 
@@ -27,15 +23,6 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  disk.addEventListener("click", () => {
-    if(running) stopMusic();
-    else resumeMusic();
-  });
-
-
-  musicPlayer.addEventListener("ended", () => {
-    musicPlayer.play();
-  })
 });
 
 
@@ -69,15 +56,9 @@ function toggleLanguage() {
   document.getElementById('languageIcon').src = `images/${newLang}.png`;
 }
 
-function stopMusic(){
-  disk.classList.remove("play");
-  running = false;
-  musicPlayer.pause();
-}
-
-function resumeMusic(){
-  disk.classList.add("play");
-  running = true;
-  musicPlayer.play();
+function showCV(){
+  const currentLang = document.documentElement.getAttribute('lang');
+  if(currentLang == "fr") window.open('ressources/cv_fr.pdf');
+  else window.open('ressources/cv_en.pdf');
 }
 
