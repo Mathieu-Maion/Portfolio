@@ -14,7 +14,7 @@
       "headerProjects": "Projets",
       "headerPath": "Parcours",
       "headerSkills": "Compétences",
-      "titlePath": "Mon cursus",
+      "titlePath": "Mon parcours",
       "titleSkills": "Mes compétences",
       "pathInfoCESITitle": "CESI école d'ingénieurs",
       "pathInfoCESIFormation": "Ingénieur informatique en alternance",
@@ -31,14 +31,17 @@
       "pathSkillsWeb": "Web",
       "pathSkillsProgrammingLanguages": "langages de programmation",
       "pathSkillsDB": "Base de données",
-      "CVText": "CV",
+      "CVText": "Mon CV",
       "pathSkillsEnvironment": "Environnement",
       "company": "Entreprise : Predict",
       "pathSkillsLanguages": "Langues parlées",
       "french" : "Français - Natif",
       "english" : "Anglais - 840 TOEIC (B2)",
       "german" : "Allemand - A2",
-      "Otherportfolio": "Portfolio de mes amis !"
+      "Otherportfolio": "Portfolio de mes amis !",
+      "ContentProjectsGoogleSheet1":"Au CESI, le temps alloué aux repas est extrêmement limité, ce qui ne laisse aucune marge pour perdre du temps à décider avec qui manger et où. Cette situation peut non seulement perturber la concentration des étudiants, mais aussi déranger ceux qui souhaitent travailler de manière productive. En tant que responsable de la restauration pour la promotion FISA A3, j'ai pris l'initiative de résoudre ce problème en proposant une solution astucieuse : l'utilisation d'un Google Sheet.",
+      "ContentProjectsGoogleSheet2":"Le Google Sheet que j'ai créé permet aux étudiants de choisir facilement leur repas en un simple clic, ce qui leur évite de devoir se concerter avec leurs camarades. Grâce à cette feuille de calcul partagée, chaque étudiant peut indiquer son choix de repas, qui est alors visible pour tout le reste de la classe. j'ai intégré des graphiques pour visualiser les préférences alimentaires de la classe. Ces graphiques permettent à chacun de voir rapidement les options les plus populaires, facilitant ainsi la prise de décision. Cela permet d'éliminer les discussions chronophages et de rendre le processus de décision beaucoup plus rapide et efficace. De plus, j'ai également utilisé des scripts personnalisés pour automatiser certaines tâches. Par exemple, un script garantisant l'automatisation du processus de remise à zéro, ce qui facilite la gestion du Google Sheet.",
+      "ContentProjectsGoogleSheet3":"En résumé, en proposant ce Google Sheet innovant, j'ai cherché à résoudre les problèmes de perte de temps et de concentration qui peuvent survenir lors de la prise des repas au CESI. Cette solution facilite le processus de choix des repas, permettant ainsi aux étudiants de profiter pleinement de leur temps de repas et de favoriser un environnement propice au travail et à la productivité. "
 
     },
     "en": {
@@ -73,14 +76,17 @@
       "pathSkillsWeb": "Web",
       "pathSkillsProgrammingLanguages": "Programmation languages",
       "pathSkillsDB": "Database",
-      "CVText": "Resume",
+      "CVText": "My resume",
       "pathSkillsEnvironment": "Environment",
       "company": "Company : Predict",
       "pathSkillsLanguages": "Spoken languages",
       "french" : "French - Natif",
       "english" : "English - 840 TOEIC (B2)",
       "german" : "German - A2",
-      "Otherportfolio": "My friends portfolio !"
+      "Otherportfolio": "My friends portfolio !",
+      "ContentProjectsGoogleSheet1":"At CESI, the allotted time for meals is extremely short, leaving no room to waste time deciding who to eat with and where. This situation not only disrupts students' concentration but also hampers those who wish to work productively. As the responsible person for food services in the FISA A3 cohort, I took the initiative to solve this problem by proposing a clever solution : using a Google Sheet.",
+      "ContentProjectsGoogleSheet2":"The Google Sheet I created allows students to easily choose their meals with a simple click, eliminating the need for coordination with their peers. Through this shared spreadsheet, each student can indicate their meal choice, which is then visible to the entire class. I integrated graphs to visualize the class's food preferences. These graphs enable everyone to quickly see the most popular options, facilitating decision-making. This eliminates time-consuming discussions and makes the decision-making process much faster and more efficient. Additionally, I also utilized custom scripts to automate certain tasks, such as a script ensuring the automation of the reset process, which simplifies the management of the Google Sheet.",
+      "ContentProjectsGoogleSheet3":"In summary, by offering this innovative Google Sheet, I aimed to solve the problems of time loss and decreased concentration that can occur during mealtime at CESI. This solution streamlines the meal selection process, allowing students to fully enjoy their mealtime and promoting an environment conducive to work and productivity."
     }
   }
   
