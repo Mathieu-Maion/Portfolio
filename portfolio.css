@@ -228,7 +228,7 @@ main .content {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
   }
   
@@ -379,6 +379,10 @@ main .content {
     height: auto;
     width: auto;
     border-radius: 10px 10px 0 0;
+  }
+
+  .contentPathInfo{
+    height: 100%;
   }
 }
 

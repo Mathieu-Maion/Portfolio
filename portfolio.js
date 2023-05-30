@@ -110,7 +110,7 @@ function splashScreenEvent(){
   splashScreen.style.color ="#333";
   setTimeout(()=>{
     splashScreen.style.opacity = 0;
-    splashScreen.style.zIndex = 0;
+    splashScreen.style.zIndex = -1;
     setTimeout(()=>{
       splashScreen.setAttribute("hidden",true);
     },1000);

@@ -38,14 +38,19 @@
       "french" : "Français - Natif",
       "english" : "Anglais - 840 TOEIC (B2)",
       "german" : "Allemand - A2",
-      "Otherportfolio": "Portfolio de mes amis !",
+      "Otherportfolio": "Portfolio de mes amis",
       "ContentProjectsGoogleSheet1":"Au CESI, le temps alloué aux repas est extrêmement limité, ce qui ne laisse aucune marge pour perdre du temps à décider avec qui manger et où. Cette situation peut non seulement perturber la concentration des étudiants, mais aussi déranger ceux qui souhaitent travailler de manière productive. En tant que responsable de la restauration pour la promotion FISA A3, j'ai pris l'initiative de résoudre ce problème en proposant une solution astucieuse : l'utilisation d'un Google Sheet.",
       "ContentProjectsGoogleSheet2":"Le Google Sheet que j'ai créé permet aux étudiants de choisir facilement leur repas en un simple clic, ce qui leur évite de devoir se concerter avec leurs camarades. Grâce à cette feuille de calcul partagée, chaque étudiant peut indiquer son choix de repas, qui est alors visible pour tout le reste de la classe. j'ai intégré des graphiques pour visualiser les préférences alimentaires de la classe. Ces graphiques permettent à chacun de voir rapidement les options les plus populaires, facilitant ainsi la prise de décision. Cela permet d'éliminer les discussions chronophages et de rendre le processus de décision beaucoup plus rapide et efficace. De plus, j'ai également utilisé des scripts personnalisés pour automatiser certaines tâches. Par exemple, un script garantisant l'automatisation du processus de remise à zéro, ce qui facilite la gestion du Google Sheet.",
       "ContentProjectsGoogleSheet3":"En résumé, en proposant ce Google Sheet innovant, j'ai cherché à résoudre les problèmes de perte de temps et de concentration qui peuvent survenir lors de la prise des repas au CESI. Cette solution facilite le processus de choix des repas, permettant ainsi aux étudiants de profiter pleinement de leur temps de repas et de favoriser un environnement propice au travail et à la productivité. ",
       "personnel": "Personnel",
-      "contactControl": "Contrôle"
-
-
+      "contactControl": "Contrôle",
+      "pathSkillsNonTechnical": "Compétences non-techniques",
+      "teamWorking": "Travail en équipe",
+      "communication": "Communication",
+      "problemSolving": "Résolution de problèmes",
+      "pathInfoPREDICTFormation": "Développeur apprenti en alternance",
+      "pathInfoPREDICTCity": "Vandœuvre-lès-Nancy, 19 Avenue de la Forêt de Haye",
+      "pathInfoPREDICTDesc": "En tant que développeur en alternance, je suis pleinement engagé dans l'apprentissage et le développement de compétences pratiques au sein d'une entreprise dynamique. J'ai l'opportunité de travailler aux côtés d'une équipe expérimentée pour concevoir, développer et mettre en œuvre des solutions logicielles innovantes. Mon rôle consiste à contribuer au développement d'applications informatiques, en utilisant des langages de programmation tels que C#, java, HTML, JS, et CSS. Grâce à cette expérience en alternance, je renforce mes compétences techniques tout en me familiarisant avec les meilleures pratiques de développement logiciel, la collaboration en équipe et la résolution de problèmes concrets."
     },
     "en": {
       "title": "My Portfolio",
@@ -86,13 +91,19 @@
       "french" : "French - Native",
       "english" : "English - 840 TOEIC (B2)",
       "german" : "German - A2",
-      "Otherportfolio": "My friends portfolio !",
+      "Otherportfolio": "My friends portfolio",
       "ContentProjectsGoogleSheet1":"At CESI, the allotted time for meals is extremely short, leaving no room to waste time deciding who to eat with and where. This situation not only disrupts students' concentration but also hampers those who wish to work productively. As the responsible person for food services in the FISA A3 cohort, I took the initiative to solve this problem by proposing a clever solution : using a Google Sheet.",
       "ContentProjectsGoogleSheet2":"The Google Sheet I created allows students to easily choose their meals with a simple click, eliminating the need for coordination with their peers. Through this shared spreadsheet, each student can indicate their meal choice, which is then visible to the entire class. I integrated graphs to visualize the class's food preferences. These graphs enable everyone to quickly see the most popular options, facilitating decision-making. This eliminates time-consuming discussions and makes the decision-making process much faster and more efficient. Additionally, I also utilized custom scripts to automate certain tasks, such as a script ensuring the automation of the reset process, which simplifies the management of the Google Sheet.",
       "ContentProjectsGoogleSheet3":"In summary, by offering this innovative Google Sheet, I aimed to solve the problems of time loss and decreased concentration that can occur during mealtime at CESI. This solution streamlines the meal selection process, allowing students to fully enjoy their mealtime and promoting an environment conducive to work and productivity.",
       "personnel": "Personal",
-      "contactControl": "Control"
-
+      "contactControl": "Control",
+      "pathSkillsNonTechnical": "Non-technical skills",
+      "teamWorking": "Team working",
+      "communication": "Communication",
+      "problemSolving": "Problems solving",
+      "pathInfoPREDICTFormation": "Work-study apprentice developer",
+      "pathInfoPREDICTCity": "France Vandœuvre-lès-Nancy, 19 Avenue de la Forêt de Haye",
+      "pathInfoPREDICTDesc": "As an apprentice developer, I am fully committed to learning and developing practical skills within a dynamic company. I have the opportunity to work alongside an experienced team to design, develop, and implement innovative software solutions. My role involves contributing to the development of computer applications using programming languages such as C#, Java, HTML, JS, and CSS. Through this apprenticeship experience, I am strengthening my technical skills while becoming familiar with best software development practices, team collaboration, and solving real-world problems."
     }
   }
   
