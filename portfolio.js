@@ -106,6 +106,8 @@ function slideContactBar(slide){
 
 function splashScreenEvent(){
   const splashScreen = document.getElementById("splash");
+  splashScreen.style.backgroundColor ="white";
+  splashScreen.style.color ="#333";
   setTimeout(()=>{
     splashScreen.style.opacity = 0;
     splashScreen.style.zIndex = 0;
