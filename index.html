@@ -9,6 +9,8 @@
 </head>
 <body>
 
+  <div class="button"><button id="ShowContactBarButton" onclick="showContactBar()"></button></div>
+
 <!--------------------------------- HEADER ---------------------------------->
   <header>
     <h1 id="headerTitle">My Portfolio</h1>
@@ -18,6 +20,7 @@
       <a id="headerPath" class="path" href="#">Curriculum</a>
       <a id="headerSkills" class="skills" href="#">Skills</a>
     </div>
+    
   </header>
 
   <main>
@@ -25,7 +28,7 @@
 <!--------------------------------- ABOUT ME ---------------------------------->
     <div class="content aboutMe">
       <h2 id="titleAboutMe">About me</h2>
-      <div class="contentAboutMe">
+      <div class="contentAboutMeContainer">
         <img src="images/me.jpg">
         <p id="aboutText">
           Hello and welcome to my portfolio! 
@@ -41,7 +44,7 @@
     <div class="content projects" hidden>
       <h2 id="titleProject">My projects</h2>
 
-      <div class="projet">
+      <div class="contentProjetContainer">
         <h3>GOOGLE SHEET</h3>
         <div class="theme">
           <span id="personnel">Personal</span>
@@ -197,8 +200,8 @@
       </div>
       <h2 id="contactControl">Control</h2>
       <button id="languageButton" onclick="toggleLanguage()"><img id="languageIcon" src="images/en.png"> <p id="languageButtonText">English</p></button>
+ 
     </div>
-
 
   </main>
 </body>

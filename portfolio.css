@@ -7,7 +7,7 @@ body {
 
 h2 {
   font-size: 30px;
-  margin-bottom: 0;
+  margin-bottom: 10px
 }
 
 
@@ -18,12 +18,14 @@ header {
   height: 70px;
   margin-right: 310px;
   padding: 20px 0;
+  min-width: 300px;
   text-align: center;
   color: #fff;
   background-color: #333;
   position: sticky;
   top: 0;
   z-index: 1;
+  transition: margin-right 1s ease;
 }
 
 header h1 {
@@ -69,6 +71,7 @@ header .headerMenu a:not(.selected):hover {
 main {
   padding: 20px;
   margin-right: 310px; 
+  transition: margin-right 1s ease;
 }
 
 main .content {
@@ -81,46 +84,52 @@ main .content {
 /* ======================================== ABOUT ME ======================================== */
 
 
-  .contentAboutMe {
+  .contentAboutMeContainer {
     display: flex;
     flex-direction: row;
+    min-width: 300px;
   }
 
-  .contentAboutMe img{
+  .contentAboutMeContainer img{
     margin-right: 20px;
-    height: auto;
+    height: 360px;
     width: 270px;
+  }
+
+  #aboutText {
+    margin-top: 0;
   }
 
 /* ======================================== PROJECT ======================================== */
 
 
- .projet {
+ .contentProjetContainer {
   margin-bottom: 30px;
   overflow: hidden;
   background-color: #fff2d9;
   border-radius: 10px;
   padding: 20px;
+  min-width: 300px;
 }
 
-.projet h3 {
+.contentProjetContainer h3 {
   font-size: 20px;
   margin-bottom: 10px;
   margin-top: 0;
 }
 
-.projet img {
+.contentProjetContainer img {
   max-width: 100%;
   height: auto;
   margin-bottom: 10px;
 }
 
-.projet p {
+.contentProjetContainer p {
   font-size: 16px;
   line-height: 1.5;
 }
 
-.projet span {
+.contentProjetContainer span {
   border: solid 2px #0094ff;
   color: white;
   font-size: 14px;
@@ -130,16 +139,16 @@ main .content {
   margin-right: 5px;
 }
 
-.projet .theme{
+.contentProjetContainer .theme{
   margin: 15px 0;
 }
 
-.projet .images{
+.contentProjetContainer .images{
   display: flex;
   flex-direction: row;
 }
 
-.projet .images img {
+.contentProjetContainer .images img {
   height: 300px;
   width: auto;
   margin-right: 10px;
@@ -155,6 +164,7 @@ main .content {
     margin: 20px 0;
     display: flex;
     flex-direction: row;
+    min-width: 300px;
   }
 
   .contentPathContainer img {
@@ -237,10 +247,11 @@ main .content {
     padding: 20px;
     flex-basis: 300px;
     margin: 10px;
+    min-width: 300px;
   }
 
 
-/* ======================================== SIDEBAR ======================================== */
+/* ======================================== CONTACT-BAR ======================================== */
 
 .contact-bar {
   position: fixed;
@@ -252,6 +263,20 @@ main .content {
   height: 100vh;
   z-index: 1; 
   overflow-y: auto;
+  transition: all 1s ease;
+}
+
+#ShowContactBarButton {
+  height: 40px;
+  width: 40px;
+  background-color: inherit;
+  border: none;
+  position: absolute;
+  right: 5px;
+  z-index: 2;
+  transition: right 1s;
+  background-image: url("./images/arrowLeft.png");
+  background-size: 40px;
 }
 
 .contact-bar button {
@@ -286,10 +311,6 @@ main .content {
   margin: auto;
 }
 
-#contactTitle {
-  margin-bottom: 0;
-}
-
 
 .contact-bar .social-icons {
   display: flex;
@@ -314,6 +335,45 @@ main .content {
   height: 48px;
   margin-right: 5px;
 }
+
+
+
+
+@media (max-width: 1200px) {
+  .path .contentPathContainer {
+    background-color: #fff2d9;
+    border-radius: 10px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .path .contentPathContainer img {
+    min-height: 350px;
+    height: auto;
+    width: auto;
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .path .contentPathContainer img {
+    height: auto;
+    min-width: 300px;
+    min-height: 0;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .contentAboutMeContainer {
+    flex-direction: column-reverse;
+  }
+
+}
+
 
 
 /* ======================================== ANIMATION ======================================== */
@@ -349,10 +409,14 @@ main .content {
 
 
 
-.projet span {
+.contentProjetContainer span {
   transition: all .3s ease-out;
 }
 
-.projet span:hover {
+.contentProjetContainer span:hover {
   transform: translate(0, -5px);
+}
+
+.slide {
+  transform: translate(350px, 0);
 }
