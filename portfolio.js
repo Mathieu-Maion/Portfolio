@@ -3,22 +3,8 @@ var hideContactBar;
 
 window.addEventListener('DOMContentLoaded', () => {
   headerMenuEvents();
-
-  
-  if(window.innerWidth <= 900) hideContactBar = true;
-  else hideContactBar = false;
-  if (hideContactBar) showContactBar(true);
-
-  addEventListener("resize", (event) => {
-    const width = window.innerWidth;
-    if(width <= 900 && hideContactBar){
-      showContactBar(true);
-      hideContactBar = false;
-    } else if(width > 900 && !hideContactBar){
-      showContactBar(true);
-      hideContactBar = true;
-    }
-  });
+  splashScreenEvent();
+  contactBarEvents();
 });
 
 
@@ -116,4 +102,36 @@ function slideContactBar(slide){
     button.style.backgroundImage = 'url("./images/arrowRight.png")';
     hideContactBar = true;
   }
+}
+
+function splashScreenEvent(){
+  const splashScreen = document.getElementById("splash");
+  setTimeout(()=>{
+    splashScreen.style.opacity = 0;
+    splashScreen.style.zIndex = 0;
+    setTimeout(()=>{
+      splashScreen.setAttribute("hidden",true);
+    },1000);
+  },1500)
+}
+
+function contactBarEvents(){
+  if(window.innerWidth <= 900) hideContactBar = true;
+  else hideContactBar = false;
+  if (hideContactBar) {
+    showContactBar(true);
+  } else {
+    document.getElementById("ShowContactBarButton").style.right = "-40px";
+  }
+
+  addEventListener("resize", (event) => {
+    const width = window.innerWidth;
+    if(width <= 900 && hideContactBar){
+      showContactBar(true);
+      hideContactBar = false;
+    } else if(width > 900 && !hideContactBar){
+      showContactBar(true);
+      hideContactBar = true;
+    }
+  });
 }

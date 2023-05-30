@@ -11,6 +11,29 @@ h2 {
 }
 
 
+/* ======================================== SPLASH-SCREEN ======================================== */
+
+
+#splash {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position : fixed;
+  top : 0;
+  left : 0;
+  transition : all ease-in 1s;
+  z-index: 3;
+  background-color: white;
+}
+
+#splash h1 {
+  align-self: center;
+  text-align: center;
+}
+
+
 /* ======================================== HEADER ======================================== */
 
 
@@ -253,6 +276,7 @@ main .content {
 
 /* ======================================== CONTACT-BAR ======================================== */
 
+
 .contact-bar {
   position: fixed;
   top: 0;
@@ -337,6 +361,7 @@ main .content {
 }
 
 
+/* ======================================== RESPONSIVE ======================================== */
 
 
 @media (max-width: 1200px) {
@@ -375,7 +400,6 @@ main .content {
 }
 
 
-
 /* ======================================== ANIMATION ======================================== */
 
 
@@ -406,7 +430,6 @@ main .content {
       transform: rotate(360deg);
   }
 }
-
 
 
 .contentProjetContainer span {
