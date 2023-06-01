@@ -7,7 +7,6 @@ window.addEventListener('DOMContentLoaded', () => {
   contactBarEvents();
 });
 
-
 function loadTranslations(lang) {
   fetch('ressources/translations.json')
     .then(response => response.json())

@@ -426,8 +426,8 @@ main .content {
       width: calc(100vw + 40px);
     }
 
-    body h2{
-      font-size: 34px;
+    h2 {
+      font-size: 40px;
     }
 
     body p {
@@ -477,6 +477,9 @@ main .content {
       height: 100%;
     }
 
+    #splash h1 {
+      font-size: 40px;
+    }
 
     .contentAboutMeContainer {
       flex-direction: column-reverse;
@@ -495,14 +498,19 @@ main .content {
      min-width: 400px;
     }
 
+    .contact-bar h2{
+      font-size: 40px;
+    }
+
     .contact-bar p {
-      font-size: 22px;
+      font-size: 30px;
+      margin: auto 0;
     }
 
 
     .contact-bar .social-icons img {
-      height: 60px;
-      width: 60px;
+      height: 80px;
+      width: 80px;
     }
 
     #languageButton {
@@ -510,9 +518,15 @@ main .content {
       height: 100px;
     }
 
+
     .contact-bar button > img {
-      height: 60px;
-      width: 60px;
+      height: 80px;
+      width: 80px;
+    }
+
+    .contact-bar button > p {
+      font-size: 40px;
+      margin: auto 0 auto 10px
     }
 }
 
