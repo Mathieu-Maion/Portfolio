@@ -427,7 +427,7 @@ main .content {
     }
 
     body h2{
-      font-size: 22px;
+      font-size: 34px;
     }
 
     body p {
@@ -436,16 +436,16 @@ main .content {
 
     header {
       width: calc(100vw + 40px);
-      height: 270px;
+      height: 390px;
     }
 
     header h1 {
-      font-size: 40px;
+      font-size: 45px;
     }
 
     header .headerMenu a {
-      font-size: 19px;
-      height: 50px;
+      font-size: 22px;
+      height: 80px;
     }
 
     header .headerMenu {
@@ -496,7 +496,7 @@ main .content {
     }
 
     .contact-bar p {
-      font-size: 19px;
+      font-size: 22px;
     }
 
 
