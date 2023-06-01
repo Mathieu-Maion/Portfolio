@@ -39,9 +39,9 @@ h2 {
 
 
 header {
-  height: 70px;
+  height: 90px;
   margin-right: 310px;
-  padding: 20px 0;
+  padding-top: 20px;
   min-width: 300px;
   text-align: center;
   color: #fff;
@@ -115,7 +115,7 @@ main .content {
   }
 
   .contentAboutMeContainer img{
-    margin-right: 20px;
+    margin: 17px 20px 0 0;
     height: 360px;
     width: 270px;
   }
@@ -127,33 +127,34 @@ main .content {
 /* ======================================== PROJECT ======================================== */
 
 
- .contentProjetContainer {
+ .contentProjectContainer {
   margin-bottom: 30px;
   overflow: hidden;
-  background-color: #fff2d9;
+  background-color: #EBECF4;;;
   border-radius: 10px;
   padding: 20px;
   min-width: 300px;
 }
 
-.contentProjetContainer h3 {
+.contentProjectContainer h3 {
   font-size: 20px;
   margin-bottom: 10px;
   margin-top: 0;
 }
 
-.contentProjetContainer img {
+.contentProjectContainer img {
   max-width: 100%;
   height: auto;
   margin-bottom: 10px;
+  border-radius: 10px;
 }
 
-.contentProjetContainer p {
+.contentProjectContainer p {
   font-size: 16px;
   line-height: 1.5;
 }
 
-.contentProjetContainer span {
+.contentProjectContainer span {
   border: solid 2px #0094ff;
   color: white;
   font-size: 14px;
@@ -163,16 +164,16 @@ main .content {
   margin-right: 5px;
 }
 
-.contentProjetContainer .theme{
+.contentProjectContainer .theme{
   margin: 15px 0;
 }
 
-.contentProjetContainer .images{
+.contentProjectContainer .images{
   display: flex;
   flex-direction: row;
 }
 
-.contentProjetContainer .images img {
+.contentProjectContainer .images img {
   height: 300px;
   width: auto;
   margin-right: 10px;
@@ -183,7 +184,7 @@ main .content {
 
 
   .contentPathContainer {
-    background-color: #fff2d9;
+    background-color: #EBECF4;;
     border-radius: 10px;
     margin: 20px 0;
     display: flex;
@@ -205,9 +206,17 @@ main .content {
   }
 
   .contentPathInfo {
-    padding: 20px;
+    margin: 20px;
     height: 310px;
     overflow-y: auto;
+  }
+
+  .contentPathInfo a{
+    transition: all .5s;
+  }
+
+  .contentPathInfo a:hover {
+    color: #3366CC;
   }
 
   .content > h2 {
@@ -266,7 +275,7 @@ main .content {
   }
   
   .contentSkillsContainer {
-    background-color: #fff2d9;
+    background-color: #EBECF4;;
     border-radius: 10px;
     padding: 20px;
     flex-basis: 300px;
@@ -308,7 +317,7 @@ main .content {
   height: 50px;
   width: 170px;
   padding: 5px 20px;
-  background-color: #007bff;
+  background-color: #3366CC ;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -319,10 +328,15 @@ main .content {
   flex-direction: row;  
   align-items: center;
   margin: 10px auto;
+  transition: all .5s;
+}
+
+.contact-bar h2 {
+  border-bottom: solid 2px;
 }
 
 .contact-bar button:hover {
-  background-color: #0056b3;
+  background-color: #2952a3;
 }
 
 .contact-bar button > img {
@@ -351,7 +365,7 @@ main .content {
 }
 
 .contact-bar .social-icons a:hover {
-  color: blue;
+  color: #3366CC;
   transform: translate(5px, 0);
 }
 
@@ -367,7 +381,6 @@ main .content {
 
 @media (max-width: 1200px) {
   .path .contentPathContainer {
-    background-color: #fff2d9;
     border-radius: 10px;
     margin: 20px 0;
     display: flex;
@@ -437,11 +450,11 @@ main .content {
 }
 
 
-.contentProjetContainer span {
+.contentProjectContainer span {
   transition: all .3s ease-out;
 }
 
-.contentProjetContainer span:hover {
+.contentProjectContainer span:hover {
   transform: translate(0, -5px);
 }
 
