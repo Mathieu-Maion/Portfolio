@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -96,6 +97,7 @@ main {
   padding: 20px;
   margin-right: 310px; 
   transition: margin-right 1s ease;
+  overflow-y: scroll;
 }
 
 main .content {
@@ -311,6 +313,7 @@ main .content {
   transition: right 1s;
   background-image: url("./images/arrowLeft.png");
   background-size: 40px;
+  position: fixed;
 }
 
 .contact-bar button {
@@ -416,6 +419,27 @@ main .content {
     flex-direction: column-reverse;
   }
 
+  header {
+    width: calc(100vw + 40px);
+    height: 390px;
+  }
+
+  header h1 {
+    font-size: 45px;
+  }
+
+  header .headerMenu a {
+    font-size: 22px;
+    height: 80px;
+  }
+
+  header .headerMenu {
+    flex-direction: column;
+  }
+
+  header .headerMenu a.selected {
+    border-radius: 0;
+  }
 }
 
 @media only screen 
@@ -460,6 +484,7 @@ main .content {
       height: 100px;
       width: 100px;
       background-size: 100px;
+      margin: 10px 10px 0 0;
     }
 
 
@@ -528,6 +553,10 @@ main .content {
       font-size: 40px;
       margin: auto 0 auto 10px
     }
+
+    .slide {
+      transform: translate(600px, 0) !important;
+    }
 }
 
 /* ======================================== ANIMATION ======================================== */
@@ -569,5 +598,5 @@ main .content {
 }
 
 .slide {
-  transform: translate(600px, 0);
+  transform: translate(350px, 0);
 }
