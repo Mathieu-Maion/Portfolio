@@ -47,10 +47,11 @@ header {
   text-align: center;
   color: #fff;
   background-color: #333;
-  position: sticky;
   top: 0;
   z-index: 1;
   transition: margin-right 1s ease;
+  position: fixed;
+  width: -moz-available;
 }
 
 header h1 {
@@ -98,6 +99,7 @@ main {
   margin-right: 310px; 
   transition: margin-right 1s ease;
   overflow-y: scroll;
+  margin-top: 110px;
 }
 
 main .content {
@@ -314,6 +316,7 @@ main .content {
   background-image: url("./images/arrowLeft.png");
   background-size: 40px;
   position: fixed;
+  margin-top: -100px;
 }
 
 .contact-bar button {
@@ -415,8 +418,16 @@ main .content {
 
 @media only screen and (max-width: 700px) {
 
+  main {
+    margin-top: 410px;
+  }
+
   .contentAboutMeContainer {
     flex-direction: column-reverse;
+  }
+
+  #ShowContactBarButton {
+    margin-top: -400px;
   }
 
   header {
@@ -490,12 +501,16 @@ main .content {
 
     main {
       width: 100vw;
+      margin-top: 410px;
     }
 
-    main .content p{
+    main .content p {
       font-size: 19px;
     }
 
+    #ShowContactBarButton {
+      margin-top: -400px;
+    }
 
     #splash {
       width: 100%;
