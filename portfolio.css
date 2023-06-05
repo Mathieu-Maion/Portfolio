@@ -285,6 +285,9 @@ main .content {
     flex-basis: 300px;
     margin: 10px;
     min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
 
