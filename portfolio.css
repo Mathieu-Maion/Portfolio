@@ -166,10 +166,17 @@ main .content {
   background-color: #3badff;
   padding: 3px;
   margin-right: 5px;
+  transition: all .14s ease-out;
+  display: flex;
+  width: fit-content;
+  flex-direction: row;
+  padding: 5px;
 }
 
 .contentProjectContainer .theme{
   margin: 15px 0;
+  display: flex;
+  flex-direction: row;
 }
 
 .contentProjectContainer .images{
@@ -612,7 +619,8 @@ main .content {
 
 
 .contentProjectContainer span:hover {
-  transform: translate(0, -5px);
+  box-shadow: 4px 4px 0px #2a8dd0;
+  transform: translate(-4px, -4px);
 }
 
 .slide {
