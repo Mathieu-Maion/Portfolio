@@ -2,6 +2,8 @@ var translations = {};
 var hideContactBar;
 
 window.addEventListener('DOMContentLoaded', () => {
+  const userLang = navigator.language || navigator.userLanguage;
+  if (userLang == "fr") loadTranslations("fr");
   headerMenuEvents();
   splashScreenEvent();
   contactBarEvents();

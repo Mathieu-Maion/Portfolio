@@ -86,10 +86,6 @@ header .headerMenu a.selected {
   border-radius: 10px 10px 0 0;
 }
 
-header .headerMenu a:not(.selected):hover {
-  transform: translate(0, -5px);
-}
-
 
 /* ======================================== MAIN ======================================== */
 
@@ -140,6 +136,12 @@ main .content {
   min-width: 300px;
 }
 
+.contentProjectContainer a {
+  text-decoration: none;
+  color: #3366CC;
+  transition: all .5s;
+}
+
 .contentProjectContainer h3 {
   font-size: 20px;
   margin-bottom: 10px;
@@ -165,7 +167,7 @@ main .content {
   border-radius: 10px;
   background-color: #3badff;
   padding: 3px;
-  margin-right: 5px;
+  margin-right: 8px;
   transition: all .14s ease-out;
   display: flex;
   width: fit-content;
@@ -211,7 +213,7 @@ main .content {
 
   .contentPathContainer a {
     font-size: 20px;
-    color: black;
+    color: #3366CC;
     text-decoration: none;
     font-weight: bold;
   }
@@ -224,10 +226,6 @@ main .content {
 
   .contentPathInfo a{
     transition: all .5s;
-  }
-
-  .contentPathInfo a:hover {
-    color: #3366CC;
   }
 
   .content > h2 {
@@ -269,10 +267,6 @@ main .content {
     align-items: center;
     margin-bottom: 10px;
     transition: all .3s ease-out;
-  }
-  
-  .competences li:hover {
-    transform: translate(5px, 0);
   }
   
   .competences img {
@@ -351,10 +345,6 @@ main .content {
   border-bottom: solid 2px;
 }
 
-.contact-bar button:hover {
-  background-color: #2952a3;
-}
-
 .contact-bar button > img {
   width: auto;
   height: 40px;
@@ -378,11 +368,6 @@ main .content {
   display: flex;
   text-decoration: none;
   transition: all .3s ease-out;
-}
-
-.contact-bar .social-icons a:hover {
-  color: #3366CC;
-  transform: translate(5px, 0);
 }
 
 .contact-bar .social-icons img {
@@ -617,10 +602,34 @@ main .content {
 
 
 
+header .headerMenu a:not(.selected):hover {
+  transform: translate(0, -5px);
+}
 
 .contentProjectContainer span:hover {
   box-shadow: 4px 4px 0px #2a8dd0;
   transform: translate(-4px, -4px);
+}
+
+.contentProjectContainer a:hover {
+  color: #113989;
+}
+
+.contentPathInfo a:hover {
+  color: #113989;
+}
+
+.competences li:hover {
+  transform: translate(5px, 0);
+}
+
+.contact-bar button:hover {
+  background-color: #2952a3;
+}
+
+.contact-bar .social-icons a:hover {
+  color: #3366CC;
+  transform: translate(5px, 0);
 }
 
 .slide {
