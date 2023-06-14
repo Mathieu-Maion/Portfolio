@@ -160,6 +160,11 @@ main .content {
   line-height: 1.5;
 }
 
+#ContentProjectsGoogleSheet5,
+#ExcelCodeP {
+  display: inline;
+}
+
 .contentProjectContainer span {
   border: solid 2px #0094ff;
   color: white;
@@ -192,6 +197,9 @@ main .content {
   margin-right: 10px;
 }
 
+#imgExcelHisto {
+  margin-top: 16px;
+}
 
 /* ======================================== CURRICULUM ======================================== */
 
