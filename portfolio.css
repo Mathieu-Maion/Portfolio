@@ -606,6 +606,14 @@ main .content:not(.animationDone) {
         margin: auto 0 auto 10px
     }
 
+    .contact-bar .social-icons a {
+        margin: 10px;
+    }
+
+    .contact-bar button {
+        margin-top: 25px;
+    }
+
     #languageButton > div {
         left: 0;
     }
@@ -618,6 +626,23 @@ main .content:not(.animationDone) {
 
     #languageIcon2 {
         height: 70px;
+    }
+
+    .contentSkillsContainer {
+        flex-basis: 350px;
+    }
+
+    .contentSkillsContainer img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .contentSkillsContainer span {
+        font-size: 30px;
+    }
+
+    .competences h2 {
+        font-size: 35px;
     }
 
     .slide {
