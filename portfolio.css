@@ -1,645 +1,668 @@
 body {
-  font-family: Rockwell, sans-serif;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  overflow-x: hidden;
+    font-family: Rockwell, sans-serif;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    overflow: hidden;
+    height: calc(100vh - 130px);
 }
 
 h2 {
-  font-size: 30px;
-  margin-bottom: 10px
+    font-size: 30px;
+    margin-bottom: 10px
 }
 
 
 /* ======================================== SPLASH-SCREEN ======================================== */
 
-
 #splash {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  position : fixed;
-  top : 0;
-  left : 0;
-  transition : all ease-in 1s;
-  z-index: 3;
-  background-color: black;
-  color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all ease-in 1s;
+    z-index: 3;
+    background-color: black;
+    color: white;
 }
 
 #splash h1 {
-  align-self: center;
-  text-align: center;
+    align-self: center;
+    text-align: center;
 }
 
 
 /* ======================================== HEADER ======================================== */
 
-
 header {
-  height: 90px;
-  margin-right: 310px;
-  padding-top: 20px;
-  min-width: 300px;
-  text-align: center;
-  color: #fff;
-  background-color: #333;
-  top: 0;
-  z-index: 1;
-  transition: margin-right 1s ease;
-  position: fixed;
-  width: -moz-available;
+    margin-right: 310px;
+    min-width: 300px;
+    text-align: center;
+    color: #fff;
+    background-color: #333;
+    top: 0;
+    z-index: 1;
+    transition: margin-right 1s ease-out;
+    position: fixed;
+    width: -webkit-fill-available;
+    width: -moz-available;
 }
 
 header h1 {
-  font-size: 35px;
-  margin: 10px 0;
+    font-size: 35px;
+    margin: 20px 0;
 }
 
 header .headerMenu {
-  display: flex;
-  flex-direction: row;
-  background-color: #333;
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
 }
 
 header .headerMenu a {
-  width: 100%;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
-  background-color: #333;
-  border-radius: 10px 10px 0 0;
-  transition: all .3s ease-out;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    border-radius: 10px 10px 0 0;
+    transition: all .3s ease-out;
 }
 
 header .headerMenu a.selected {
-  font-weight: bold;
-  color: #333;
-  background-color: white;
-  border-radius: 10px 10px 0 0;
+    font-weight: bold;
+    color: #333;
+    background-color: #eee;
+    border-radius: 10px 10px 0 0;
 }
 
 
 /* ======================================== MAIN ======================================== */
 
-
 main {
-  padding: 20px;
-  margin-right: 310px; 
-  transition: margin-right 1s ease;
-  overflow-y: scroll;
-  margin-top: 110px;
+    padding: 20px 20px 0 20px;
+    margin-right: 310px;
+    transition: all 1s ease-out;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-top: 110px;
+    height: 100%;
 }
 
 main .content {
-  font-size: 17px;
-  text-align: justify;
-  animation: slide-in-from-left 2s ease-in-out;
+    font-size: 17px;
+    text-align: justify;
+}
+
+main .content:not(.animationDone) {
+    animation: slide-in-from-left 2s ease-in-out;
 }
 
 
 /* ======================================== ABOUT ME ======================================== */
 
-
-  .contentAboutMeContainer {
+.contentAboutMeContainer {
     display: flex;
     min-width: 300px;
     flex-direction: row;
-  }
+}
 
-  .contentAboutMeContainer img{
-    margin: 17px 20px 0 0;
+.contentAboutMeContainer img {
+    margin-right: 20px;
     height: 360px;
     width: 270px;
-  }
+    float: left;
+}
 
-  #aboutText {
+#aboutText {
     margin-top: 0;
-  }
+}
+
+#aboutText1 {
+    margin-top: 0;
+}
 
 /* ======================================== PROJECT ======================================== */
-
-
- .contentProjectContainer {
-  margin-bottom: 30px;
-  overflow: hidden;
-  background-color: #EBECF4;;;
-  border-radius: 10px;
-  padding: 20px;
-  min-width: 300px;
+.contentProjectContainer {
+    margin-bottom: 30px;
+    overflow: hidden;
+    background-color: #EBECF4;
+    border-radius: 10px;
+    padding: 20px;
+    min-width: 300px;
 }
 
 .contentProjectContainer a {
-  text-decoration: none;
-  color: #3366CC;
-  transition: all .5s;
+    text-decoration: none;
+    color: #3366CC;
+    cursor: pointer;
+    transition: all .5s;
 }
 
 .contentProjectContainer h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 0;
 }
 
 .contentProjectContainer img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-  border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 .contentProjectContainer p {
-  font-size: 16px;
-  line-height: 1.5;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 #ContentProjectsGoogleSheet5,
 #ExcelCodeP {
-  display: inline;
+    display: inline;
 }
 
 .contentProjectContainer span {
-  border: solid 2px #0094ff;
-  color: white;
-  font-size: 14px;
-  border-radius: 10px;
-  background-color: #3badff;
-  padding: 3px;
-  margin-right: 8px;
-  transition: all .14s ease-out;
-  display: flex;
-  width: fit-content;
-  flex-direction: row;
-  padding: 5px;
+    border: solid 2px #0094ff;
+    color: white;
+    font-size: 14px;
+    border-radius: 10px;
+    background-color: #3badff;
+    padding: 3px;
+    margin-right: 8px;
+    transition: all .14s ease-out;
+    display: flex;
+    width: fit-content;
+    flex-direction: row;
+    padding: 5px;
 }
 
-.contentProjectContainer .theme{
-  margin: 15px 0;
-  display: flex;
-  flex-direction: row;
+.contentProjectContainer .theme {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: row;
 }
 
-.contentProjectContainer .images{
-  display: flex;
-  flex-direction: row;
+.contentProjectContainer .images {
+    display: flex;
+    flex-direction: row;
 }
 
 .contentProjectContainer .images img {
-  height: 300px;
-  width: auto;
-  margin-right: 10px;
+    height: 300px;
+    width: auto;
+    margin-right: 10px;
 }
 
 #imgExcelHisto {
-  margin-top: 16px;
+    margin-top: 16px;
 }
 
 /* ======================================== CURRICULUM ======================================== */
 
 
-  .contentPathContainer {
-    background-color: #EBECF4;;
+.contentPathContainer {
+    background-color: #EBECF4;
     border-radius: 10px;
     margin: 20px 0;
     display: flex;
     flex-direction: row;
     min-width: 300px;
-  }
+}
 
-  .contentPathContainer img {
+.contentPathContainer img {
     height: 350px;
     width: auto;
     border-radius: 10px 0 0 10px;
-  }
+}
 
-  .contentPathContainer a {
+.contentPathContainer a {
     font-size: 20px;
     color: #3366CC;
     text-decoration: none;
     font-weight: bold;
-  }
+}
 
-  .contentPathInfo {
-    margin: 20px;
+.contentPathInfo {
+    margin: 20px 10px 20px 20px;
     height: 310px;
     overflow-y: auto;
-  }
+    padding-right: 10px;
+}
 
-  .contentPathInfo a{
+.contentPathInfo a {
     transition: all .5s;
-  }
+}
 
-  .content > h2 {
+.content > h2 {
     margin-top: 0;
     margin-bottom: 20px;
-  }
+}
 
-  #pathInfoCompany {
+.content > div > div > p:last-child {
+    margin-bottom: 0;
+}
+
+#pathInfoCompany {
     font-weight: normal;
     font-size: 17px;
-  }
-
+}
 
 /* ======================================== SKILLS ======================================== */
 
 
-  .competences {
+.competences {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-  }
-  
-  .competences h2 {
+}
+
+.competences h2 {
     font-size: 24px;
     margin-bottom: 10px;
     text-align: center;
     margin-top: 0;
-  }
-  
-  .competences ul {
+}
+
+.competences ul {
     list-style: none;
     padding: 0;
-  }
-  
-  .competences li {
+}
+
+.competences li {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
     transition: all .3s ease-out;
-  }
-  
-  .competences img {
+}
+
+.competences img {
     width: 48px;
     height: 48px;
     margin-right: 10px;
-  }
-  
-  .competences span {
+}
+
+.competences span {
     font-size: 18px;
-  }
-  
-  .contentSkillsContainer {
-    background-color: #EBECF4;;
+}
+
+.contentSkillsContainer {
+    background-color: #EBECF4;
     border-radius: 10px;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     flex-basis: 300px;
     margin: 10px;
     min-width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-  }
-
+}
 
 /* ======================================== CONTACT-BAR ======================================== */
 
 
 .contact-bar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: #f2f2f2;
-  width: 270px;
-  padding: 0 20px;
-  height: 100%;
-  z-index: 1; 
-  overflow-y: auto;
-  transition: all 1s ease;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #f2f2f2;
+    width: 270px;
+    padding: 0 20px;
+    height: 100%;
+    z-index: 1;
+    overflow-y: auto;
+    transition: all 1s ease-out;
 }
 
 #ShowContactBarButton {
-  height: 40px;
-  width: 40px;
-  background-color: inherit;
-  border: none;
-  position: absolute;
-  right: 5px;
-  z-index: 2;
-  transition: right 1s;
-  background-image: url("./images/arrowLeft.png");
-  background-size: 40px;
-  position: fixed;
-  margin-top: -100px;
+    height: 40px;
+    width: 40px;
+    background-color: inherit;
+    border: none;
+    position: absolute;
+    right: 5px;
+    z-index: 2;
+    transition: right 1s;
+    background-image: url("./images/arrowLeft.png");
+    background-size: 40px;
+    position: fixed;
+    margin-top: -100px;
 }
 
 .contact-bar button {
-  height: 50px;
-  width: 170px;
-  padding: 5px 20px;
-  background-color: #3366CC ;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 20px;
-  font-weight: bold;
-  display: flex;
-  flex-direction: row;  
-  align-items: center;
-  margin: 10px auto;
-  transition: all .5s;
+    height: 50px;
+    width: 170px;
+    padding: 5px 20px;
+    background-color: #3366CC;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px auto;
+    transition: all .5s;
 }
 
 .contact-bar h2 {
-  border-bottom: solid 2px;
+    border-bottom: solid 2px;
 }
 
 .contact-bar button > img {
-  width: auto;
-  height: 40px;
-  vertical-align: middle;
-  margin-right: 5px;
+    width: auto;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#languageButton > div {
+    position: relative;
+    top: 7px;
+    left: -5px;
+}
+
+#languageIcon1 {
+    width: auto;
+    height: 40px;
+    position: relative;
+    top: -8px;
+    left: 8px;
+}
+
+#languageIcon2 {
+    width: auto;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
 #languageButtonText {
-  margin: auto;
+    margin: auto;
 }
 
 
 .contact-bar .social-icons {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-bar .social-icons a {
-  margin: 0 5px;
-  color: black;
-  display: flex;
-  text-decoration: none;
-  transition: all .3s ease-out;
+    margin: 0 5px;
+    color: black;
+    display: flex;
+    text-decoration: none;
+    transition: all .3s ease-out;
 }
 
 .contact-bar .social-icons img {
-  width: 48px;
-  height: 48px;
-  margin-right: 5px;
+    width: 48px;
+    height: 48px;
+    margin-right: 5px;
 }
-
 
 /* ======================================== RESPONSIVE ======================================== */
 
 
 @media (max-width: 1200px) {
-  .path .contentPathContainer {
-    border-radius: 10px;
-    margin: 20px 0;
-    display: flex;
-    flex-direction: column;
-  }
+    .path .contentPathContainer {
+        border-radius: 10px;
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+    }
 
-  .path .contentPathContainer img {
-    min-height: 350px;
-    height: auto;
-    width: auto;
-    border-radius: 10px 10px 0 0;
-  }
+    .path .contentPathContainer img {
+        min-height: 350px;
+        height: auto;
+        width: auto;
+        border-radius: 10px 10px 0 0;
+    }
 
-  .contentPathInfo{
-    height: 100%;
-  }
+    .contentPathInfo {
+        height: 100%;
+    }
 }
 
 @media (max-width: 900px) {
 
-  .path .contentPathContainer img {
-    height: auto;
-    min-width: 300px;
-    min-height: 0;
-  }
-
+    .path .contentPathContainer img {
+        height: auto;
+        min-width: 300px;
+        min-height: 0;
+    }
 }
-
 
 @media only screen and (max-width: 700px) {
-
-  main {
-    margin-top: 410px;
-  }
-
-  .contentAboutMeContainer {
-    flex-direction: column-reverse;
-  }
-
-  #ShowContactBarButton {
-    margin-top: -400px;
-  }
-
-  header {
-    width: calc(100vw + 40px);
-    height: 390px;
-  }
-
-  header h1 {
-    font-size: 45px;
-  }
-
-  header .headerMenu a {
-    font-size: 22px;
-    height: 80px;
-  }
-
-  header .headerMenu {
-    flex-direction: column;
-  }
-
-  header .headerMenu a.selected {
-    border-radius: 0;
-  }
-}
-
-@media only screen 
-  and (min-device-width: 200px) 
-  and (max-device-width: 600px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    body{
-      width: calc(100vw + 40px);
+    body {
+        height: calc(100vh - 430px);
     }
-
-    h2 {
-      font-size: 40px;
-    }
-
-    body p {
-      margin-bottom: 10px;
-    }
-
-    header {
-      width: calc(100vw + 40px);
-      height: 390px;
-    }
-
-    header h1 {
-      font-size: 45px;
-    }
-
-    header .headerMenu a {
-      font-size: 22px;
-      height: 80px;
-    }
-
-    header .headerMenu {
-      flex-direction: column;
-    }
-
-    header .headerMenu a.selected {
-      border-radius: 0;
-    }
-
-    #ShowContactBarButton {
-      height: 100px;
-      width: 100px;
-      background-size: 100px;
-      margin: 10px 10px 0 0;
-    }
-
 
     main {
-      width: 100vw;
-      margin-top: 410px;
-    }
-
-    main .content p {
-      font-size: 19px;
-    }
-
-    #ShowContactBarButton {
-      margin-top: -400px;
-    }
-
-    #splash {
-      width: 100%;
-      height: 100%;
-    }
-
-    #splash h1 {
-      font-size: 40px;
+        margin-top: 410px;
     }
 
     .contentAboutMeContainer {
-      flex-direction: column-reverse;
-      padding: 20px;
+        flex-direction: column-reverse;
     }
 
-    .contentAboutMeContainer img{
-      height: auto;
-      width: 80%;
-      align-self: center;
+    #ShowContactBarButton {
+        margin-top: -400px;
     }
 
+    header {
+        width: calc(100vw + 40px);
+    }
+
+    header h1 {
+        font-size: 45px;
+    }
+
+    header .headerMenu a {
+        font-size: 22px;
+        height: 80px;
+        border-radius: 0;
+    }
+
+    header .headerMenu {
+        flex-direction: column;
+    }
+
+    header .headerMenu a.selected {
+        border-radius: 0;
+    }
+}
+
+@media only screen and (min-device-width: 200px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        width: calc(100vw + 40px);
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    body p {
+        margin-bottom: 10px;
+    }
+
+    header {
+        width: calc(100vw + 40px);
+        height: 390px;
+    }
+
+    header h1 {
+        font-size: 45px;
+    }
+
+    header .headerMenu a {
+        font-size: 22px;
+        height: 80px;
+    }
+
+    header .headerMenu {
+        flex-direction: column;
+    }
+
+    header .headerMenu a.selected {
+        border-radius: 0;
+    }
+
+    #ShowContactBarButton {
+        height: 100px;
+        width: 100px;
+        background-size: 100px;
+        margin: 10px 10px 0 0;
+    }
+
+    main {
+        width: 100vw;
+        margin-top: 410px;
+    }
+
+    main .content p {
+        font-size: 19px;
+    }
+
+    #ShowContactBarButton {
+        margin-top: -400px;
+    }
+
+    #splash {
+        width: 100%;
+        height: 100%;
+    }
+
+    #splash h1 {
+        font-size: 40px;
+    }
+
+    .contentAboutMeContainer {
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+
+    .contentAboutMeContainer img {
+        height: auto;
+        width: 80%;
+        align-self: center;
+    }
 
     .contact-bar {
-     width: 50vw;
-     min-width: 400px;
+        width: 50vw;
+        min-width: 400px;
     }
 
-    .contact-bar h2{
-      font-size: 40px;
+    .contact-bar h2 {
+        font-size: 40px;
     }
 
     .contact-bar p {
-      font-size: 30px;
-      margin: auto 0;
+        font-size: 30px;
+        margin: auto 0;
     }
 
-
     .contact-bar .social-icons img {
-      height: 80px;
-      width: 80px;
+        height: 80px;
+        width: 80px;
     }
 
     #languageButton {
-      width: 340px;
-      height: 100px;
+        width: 340px;
+        height: 100px;
     }
 
-
     .contact-bar button > img {
-      height: 80px;
-      width: 80px;
+        height: 80px;
+        width: 80px;
     }
 
     .contact-bar button > p {
-      font-size: 40px;
-      margin: auto 0 auto 10px
+        font-size: 40px;
+        margin: auto 0 auto 10px
     }
 
     .slide {
-      transform: translate(600px, 0) !important;
+        transform: translate(600px, 0) !important;
     }
 }
 
+
 /* ======================================== ANIMATION ======================================== */
 
-
 @keyframes slide-in-from-left {
-  0% {
-    opacity: 0;
-    margin-left: -20px;
-  }
-  100% {
-    opacity: 1;
-    margin-left: 0;
-  }
+    0% {
+        opacity: 0;
+        margin-left: -20px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 0;
+    }
 }
 
 @keyframes scale {
-  100% {
-    opacity: 1;
-    transform: scale(1);
-    filter: blur(0);
-  }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0);
+    }
 }
 
-@keyframes rotate{
-  0%{
-      transform: rotate(0);
-  }
-  100%{
-      transform: rotate(360deg);
-  }
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
-
-
 
 header .headerMenu a:not(.selected):hover {
-  transform: translate(0, -5px);
+    /*color: #3366CC;*/
 }
 
 .contentProjectContainer span:hover {
-  box-shadow: 4px 4px 0px #2a8dd0;
-  transform: translate(-4px, -4px);
+    box-shadow: 4px 4px 0px #2a8dd0;
+    transform: translate(-4px, -4px);
 }
 
 .contentProjectContainer a:hover {
-  color: #113989;
+    color: #113989;
 }
 
 .contentPathInfo a:hover {
-  color: #113989;
+    color: #113989;
 }
 
 .competences li:hover {
-  transform: translate(5px, 0);
+    transform: translate(5px, 0);
 }
 
 .contact-bar button:hover {
-  background-color: #2952a3;
+    background-color: #2952a3;
 }
 
 .contact-bar .social-icons a:hover {
-  color: #3366CC;
-  transform: translate(5px, 0);
+    color: #3366CC;
+    transform: translate(5px, 0);
 }
 
 .slide {
-  transform: translate(350px, 0);
+    transform: translate(310px, 0);
 }

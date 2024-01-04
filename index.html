@@ -1,271 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title id="title">My Portfolio</title>
-  <link rel="icon" type="image/png" href="images/icon.png" />
-  <link rel="stylesheet" href="portfolio.css">
-  <script src="portfolio.js" data-lang="en"></script>
+    <meta charset="UTF-8">
+    <title id="title">My Portfolio</title>
+    <link rel="icon" type="image/png" href="images/icon.png" />
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="portfolio.js" data-lang="en"></script>
 </head>
 <body>
-<div id="splash"><h1> WELCOME ON MY PORTFOLIO </h1></div>
-<div class="button"><button id="ShowContactBarButton" onclick="showContactBar()"></button></div>
+    <div id="splash"><h1> WELCOME ON MY PORTFOLIO </h1></div>
+    <div class="button"><button id="ShowContactBarButton" onclick="showContactBar()"></button></div>
 
-<!--------------------------------- HEADER ---------------------------------->
-  <header>
-    <h1 id="headerTitle">My Portfolio</h1>
-    <div class="headerMenu">
-      <a id="headerAboutMe" class="selected aboutMe" href="#">About me</a>
-      <a id="headerProjects" class="projects" href="#">Projects</a>
-      <a id="headerPath" class="path" href="#">Curriculum</a>
-      <a id="headerSkills" class="skills" href="#">Skills</a>
-    </div>
-  </header>
 
-  <main>
-
-<!--------------------------------- ABOUT ME ---------------------------------->
-    <div class="content aboutMe">
-      <h2 id="titleAboutMe">About me</h2>
-      <div class="contentAboutMeContainer">
-        <img src="images/me.jpg">
-        <div>
-          <p id="aboutText1">
-            Welcome to my portfolio ! I am a student pursuing a degree in computer engineering through an apprenticeship program. 
-            I am passionate about emerging technologies and constantly seeking new opportunities to apply my skills and expand my knowledge. 
-            Within this portfolio, I have gathered my projects, achievements, and professional experiences to provide you with an overview of my journey and competencies.
-          </p>  
-          <p id="aboutText2">
-            Explore my portfolio to discover the breadth of my skills and accomplishments as a student in a computer engineering apprenticeship program.
-             I have dedicated time and effort to develop tangible projects, putting into practice the knowledge and skills 
-             I have acquired throughout my studies. Through a range of projects, from web application development to tackling complex problem-solving, 
-             I have been able to enhance my technical abilities and explore new technologies.
-          </p>
-          <p id="aboutText3">
-            My goal is to deliver innovative and efficient solutions using programming languages such as Java, Python, and JavaScript, 
-            along with modern frameworks and tools. I also possess a strong background in web technologies such as HTML, CSS, 
-            and databases. My approach centers around problem-solving and continuous improvement, 
-            always seeking to learn new technologies and take on new challenges.
-          </p>
-          <p id="aboutText4">
-            Feel free to explore my portfolio to discover some of my notable projects, and don't hesitate to reach out if you would like 
-            to learn more or discuss potential collaborations. I am open to learning opportunities and collaborations, 
-            ready to contribute to exciting projects in the field of computer engineering.
-          </p>
+    <!--------------------------------- HEADER ---------------------------------->
+    <header>
+        <h1 id="headerTitle">My Portfolio</h1>
+        <div class="headerMenu">
+            <a id="headerAboutMe" class="selected aboutMe" href="#">About me</a>
+            <a id="headerProjects" class="projects" href="#">Projects</a>
+            <a id="headerPath" class="path" href="#">Curriculum</a>
+            <a id="headerSkills" class="skills" href="#">Skills</a>
         </div>
-      </div>
-    </div>
+    </header>
 
-<!--------------------------------- PROJECTS ---------------------------------->
-    <div class="content projects" hidden>
-      <h2 id="titleProject">My projects</h2>
+    <main>
+        <!--------------------------------- ABOUT ME ---------------------------------->
+        <div class="content aboutMe animationDone">
+            <h2 id="titleAboutMe">About me</h2>
+            <div class="contentAboutMeContainer">
+                <div>
+                    <img src="images/me.jpg">
 
-      <div class="contentProjectContainer">
-        <h3>GOOGLE SHEET</h3>
-        <div class="theme">
-          <span id="personnel">Personal</span>
-          <span>Excel</span>
-          <span>Apps script</span>
-        </div>
-        <p id="ContentProjectsGoogleSheet1">
-          At CESI, the allotted time for meals is extremely short, leaving no room to waste time deciding who to eat with and where. 
-          This situation not only disrupts students' concentration but also hampers those who wish to work productively. 
-          As the responsible person for food services in the FISA A3 cohort, I took the initiative to solve this problem by proposing a clever solution : using a Google Sheet.
-        </p>
-        <p id="ContentProjectsGoogleSheet2">
-          The Google Sheet I created allows students to easily choose their meals with a simple click, eliminating the need for coordination with their peers.
-          Through this shared spreadsheet, each student can indicate their meal choice, which is then visible to the entire class.
-          I integrated graphs to visualize the class's food preferences. These graphs enable everyone to quickly see the most popular options,
-          facilitating decision-making. This eliminates time-consuming discussions and makes the decision-making process much faster and more efficient.
-          Additionally, I also utilized custom scripts to automate certain tasks, such as a script ensuring the automation of the reset process, which simplifies the management of the Google Sheet.
-        </p> 
-        <img src="images/googlesheet.png" alt="Image du projet 1">
-        <img src="images/googlesheet.gif" alt="Image du projet 2">
-        <p id="ContentProjectsGoogleSheet3">
-          In addition to the Google Sheet solution for meal selection, I have also implemented a feature that allows 
-          students to access the history of previous weeks' meal choices. This feature not only provides a convenient 
-          way to review past preferences but also allows for valuable statistical analysis.
-        </p>
-        <p id="ContentProjectsGoogleSheet4">
-          By maintaining a continuous record of meal selections, we can track trends and patterns in the choices made by the class. 
-          This historical data offers insights into the group's preferences and enables the analysis of eating habits.
-          By consulting the history, students can make informed decisions based on past choices. Additionally, it facilitates 
-          the identification of popular dishes and common preferences, which can aid in better menu planning in the future.
-        </p>
-        <div>
-          <p id="ContentProjectsGoogleSheet5">
-            Additionally, the history feature also helps enforce the rules and code of conduct of the Excel. 
-            It ensures that everyone adheres to the established guidelines and standards. 
-            Deviations or violations can be identified, which may result in appropriate actions or sanctions in accordance with
-          </p>
-          <p id="ExcelCodeP"> <a id="ExcelCode" href="https://leliteaucesi.fr/excel">the Excel code</a>.</p>
-        </div>
-        <img id="imgExcelHisto" src="images/googlesheethisto.png" alt="Image du projet 3">
-        <p id="ContentProjectsGoogleSheet6">
-          In summary, by offering this innovative Google Sheet, I aimed to solve the problems of time loss and decreased concentration that can occur during mealtime at CESI. 
-          This solution streamlines the meal selection process, allowing students to fully enjoy their mealtime and promoting an environment conducive to work and productivity.
-        </p> 
-      </div>
-      
-    </div>
-
-
-<!--------------------------------- CURRICULUM ---------------------------------->
-    <div class="content path" hidden>
-      <h2 id="titlePath">My curriculum</h2>
-
-      <div class="contentPathContainer">
-        <img src="images/PREDICT.png">
-        <div class="contentPathInfo">
-          <a id="pathInfoPREDICTTitle" href="https://www.predict.fr/">PREDICT</a>
-          <p>2022-20??</p>
-          <p id="pathInfoPREDICTFormation">Work-study apprentice developer</p>
-          <p id="pathInfoPREDICTCity">France Vandœuvre-lès-Nancy, 19 Avenue de la Forêt de Haye</p>
-          <p id="pathInfoPREDICTDesc">
-            As an apprentice developer, I am fully committed to learning and developing practical skills within a dynamic company. 
-            I have the opportunity to work alongside an experienced team to design, develop, and implement innovative software solutions. 
-            My role involves contributing to the development of computer applications using programming languages such as C#, Java, HTML, JS, and CSS. 
-            Through this apprenticeship experience, I am strengthening my technical skills while becoming familiar with best software development practices, 
-            team collaboration, and solving real-world problems.
-          </p>
-        </div>
-      </div>
-
-      <div class="contentPathContainer">
-        <img src="images/CESI.png">
-        <div class="contentPathInfo">
-          <a id="pathInfoCESITitle" href="https://nancy.cesi.fr/">CESI école d'ingénieurs</a>
-          <p>2022-2025</p>
-          <p id="pathInfoCESIFormation">Computer engineer as work-study</p>
-          <a id="pathInfoCompany" href="https://www.predict.fr/">Company : Predict</a>
-          <p id="pathInfoCESICity">France Vandœuvre-lès-Nancy, 6 Rue Bois du Chêne le Loup</p>
-          <p id="pathInfoCESIDesc">
-            Currently in computer engineering training, I develop both advanced computer skills and expertise in team work. 
-            By specializing in areas such as programming, networking and computer security, I gain in-depth technical expertise. 
-            At the same time, the group projects in which I participate allow me to improve my interpersonal skills, such as communication, 
-            collaboration and team problem-solving, essential qualities for success in the field of computer engineering.
-          </p>
-        </div>
-      </div>
-
-      <div class="contentPathContainer">
-        <img src="images/IUT.jpg">
-        <div class="contentPathInfo">
-          <a id="pathInfoIUTTitle" href="https://iut-charlemagne.univ-lorraine.fr/">University institute of technology Nancy-Charlemagne</a>
-          <p>2020-2022</p>
-          <p id="pathInfoIUTFormation">Computer science diploma specialized in mathematics for engineers</p>
-          <p id="pathInfoIUTCity">France Nancy, 2Ter Bd Charlemagne</p>
-          <p id="pathInfoIUTDesc">
-            The computer science with a specialty in mathematics for engineering training allowed me to develop in-depth computer skills 
-            and work effectively as a team. I have acquired expertise in areas such as programming, databases and software design, 
-            while collaborating with my peers on concrete projects. This experience has enabled me not only to strengthen my technical skills, 
-            but also to develop my communication, problem-solving and collaborative skills, which are essential in the professional world of IT.
-          </p>
-        </div>
-      </div>
-
-      <div class="contentPathContainer">
-        <img src="images/Poincare.jpg">
-        <div class="contentPathInfo">
-          <a id="pathInfoPoincareTitle" href="https://lycee-poincare.fr/">Highschool Henri Poincaré</a>
-          <p>2017-2020</p>
-          <p id="pathInfoPoincareFormation">Scientific baccalaureate with mathematics specialization</p>
-          <p id="pathInfoPoincareCity">France Nancy</p>
-          <p id="pathInfoPoincareDesc">
-            This training has enabled me to develop the ability to work rigorously, 
-            analyze complex problems, and apply mathematical methods to solve real-life situations. 
-            These skills have proven valuable to me in various fields, including sciences, engineering, and computer science.   
-          </p>
-        </div>
-      </div>
-    </div>
-
-
-<!--------------------------------- SKILLS ---------------------------------->
-    <div class="content skills" hidden>
-      <h2 id="titleSkills">My skills</h2>
-      <div class="competences">
-
-        <div class="contentSkillsContainer">
-          <h2 id="pathSkillsWeb">Web</h2>
-          <ul>
-            <li><img src="images/html.svg" alt="HTML Icon"><span>HTML</span>
-            </li>
-            <li><img src="images/js.svg" alt="JavaScript Icon"><span>JavaScript</span></li>
-            <li><img src="images/css.svg" alt="CSS Icon"><span>CSS</span></li>
-            <li><img src="images/php.svg" alt="PHP Icon"><span>PHP</span></li>
-          </ul>
+                    <p id="aboutText1">
+                        Welcome to my portfolio ! I am a student pursuing a master degree in computer engineering through an apprenticeship program.
+                        I am passionate about emerging technologies and constantly seeking new opportunities to apply my skills and expand my knowledge.
+                        Within this portfolio, I have gathered my projects, achievements, and professional experiences to provide you with an overview of my journey and competencies.
+                    </p>
+                    <p id="aboutText2">
+                        Explore my portfolio to discover the breadth of my skills and accomplishments as a student in a computer engineering apprenticeship program.
+                        I have dedicated time and effort to develop tangible projects, putting into practice the knowledge and skills
+                        I have acquired throughout my studies. Through a range of projects, from web application development to tackling complex problem-solving,
+                        I have been able to enhance my technical abilities and explore new technologies.
+                    </p>
+                    <p id="aboutText3">
+                        My goal is to deliver innovative and efficient solutions using programming languages such as Java, Python, and JavaScript,
+                        along with modern frameworks and tools. I also possess a strong background in web technologies such as HTML, CSS,
+                        and databases. My approach centers around problem-solving and continuous improvement,
+                        always seeking to learn new technologies and take on new challenges.
+                    </p>
+                    <p id="aboutText4">
+                        Feel free to explore my portfolio to discover some of my notable projects, and don't hesitate to reach out if you would like
+                        to learn more or discuss potential collaborations. I am open to learning opportunities and collaborations,
+                        ready to contribute to exciting projects in the field of computer engineering.
+                    </p>
+                </div>
+            </div>
         </div>
 
-        <div class="contentSkillsContainer">
-          <h2 id="pathSkillsProgrammingLanguages">Programming languages</h2>
-          <ul>
-            <li><img src="images/csharp.svg" alt="C# Icon"><span>C#</span></li>
-            <li><img src="images/java.svg" alt="Java Icon"><span>Java</span></li>
-            <li><img src="images/python.svg" alt="Python Icon"><span>Python</span></li>
-            <li><img src="images/scala.svg" alt="Scala Icon"><span>Scala</span></li>
-          </ul>
+
+        <!--------------------------------- PROJECTS ---------------------------------->
+        <div class="content projects" hidden>
+            <h2 id="titleProject">My projects</h2>
+
+            <div class="contentProjectContainer">
+                <h3>GOOGLE SHEET</h3>
+                <div class="theme">
+                    <span id="personnel">Personal</span>
+                    <span>Excel</span>
+                    <span>Apps script</span>
+                </div>
+                <p id="ContentProjectsGoogleSheet1">
+                    At CESI, the allotted time for meals is extremely short, leaving no room to waste time deciding who to eat with and where.
+                    This situation not only disrupts students' concentration but also hampers those who wish to work productively.
+                    As the responsible person for food services in the FISA A3 cohort, I took the initiative to solve this problem by proposing a clever solution : using a Google Sheet.
+                </p>
+                <p id="ContentProjectsGoogleSheet2">
+                    The Google Sheet I created allows students to easily choose their meals with a simple click, eliminating the need for coordination with their peers.
+                    Through this shared spreadsheet, each student can indicate their meal choice, which is then visible to the entire class.
+                    I integrated graphs to visualize the class's food preferences. These graphs enable everyone to quickly see the most popular options,
+                    facilitating decision-making. This eliminates time-consuming discussions and makes the decision-making process much faster and more efficient.
+                    Additionally, I also utilized custom scripts to automate certain tasks, such as a script ensuring the automation of the reset process, which simplifies the management of the Google Sheet.
+                </p>
+                <img src="images/googlesheet.png" alt="Image du projet 1">
+                <img src="images/googlesheet.gif" alt="Image du projet 2">
+                <p id="ContentProjectsGoogleSheet3">
+                    In addition to the Google Sheet solution for meal selection, I have also implemented a feature that allows
+                    students to access the history of previous weeks' meal choices. This feature not only provides a convenient
+                    way to review past preferences but also allows for valuable statistical analysis.
+                </p>
+                <p id="ContentProjectsGoogleSheet4">
+                    By maintaining a continuous record of meal selections, we can track trends and patterns in the choices made by the class.
+                    This historical data offers insights into the group's preferences and enables the analysis of eating habits.
+                    By consulting the history, students can make informed decisions based on past choices. Additionally, it facilitates
+                    the identification of popular dishes and common preferences, which can aid in better menu planning in the future.
+                </p>
+                <div>
+                    <p id="ContentProjectsGoogleSheet5">
+                        Additionally, the history feature also helps enforce the rules and code of conduct of the Excel.
+                        It ensures that everyone adheres to the established guidelines and standards.
+                        Deviations or violations can be identified, which may result in appropriate actions or sanctions in accordance with
+                    </p>
+                    <p id="ExcelCodeP"> <a id="ExcelCode" onclick="showDocument('codeExcel','pdf')">the Excel code</a>.</p>
+                </div>
+                <img id="imgExcelHisto" src="images/googlesheethisto.png" alt="Image du projet 3">
+                <p id="ContentProjectsGoogleSheet6">
+                    In summary, by offering this innovative Google Sheet, I aimed to solve the problems of time loss and decreased concentration that can occur during mealtime at CESI.
+                    This solution streamlines the meal selection process, allowing students to fully enjoy their mealtime and promoting an environment conducive to work and productivity.
+                </p>
+            </div>
+
         </div>
 
-        <div class="contentSkillsContainer">
-          <h2 id="pathSkillsDB">Database</h2>
-          <ul>
-            <li><img src="images/sql.svg" alt="SQL Icon"><span>SQL</span></li>
-            <li><img src="images/mysql.svg" alt="MySQL Icon"><span>MySQL</span></li>
-            <li><img src="images/postgresql.svg" alt="PostGreSQL Icon"><span>PostGreSQL</span></li>
-            <li><img src="images/dbeaver.svg" alt="Dbeaver Icon"><span>DBeaver</span></li>
-          </ul>
+
+        <!--------------------------------- CURRICULUM ---------------------------------->
+        <div class="content path" hidden>
+            <h2 id="titlePath">My curriculum</h2>
+
+            <div class="contentPathContainer">
+                <img src="images/PREDICT.png">
+                <div class="contentPathInfo">
+                    <a id="pathInfoPREDICTTitle" href="https://www.predict.fr/">PREDICT</a>
+                    <p>2022-20??</p>
+                    <p id="pathInfoPREDICTFormation">Work-study apprentice developer</p>
+                    <p id="pathInfoPREDICTCity">France, Vandœuvre-lès-Nancy, 19 Avenue de la Forêt de Haye</p>
+                    <p id="pathInfoPREDICTDesc">
+                        As an apprentice developer, I am fully committed to learning and developing practical skills within a dynamic company.
+                        I have the opportunity to work alongside an experienced team to design, develop, and implement innovative software solutions.
+                        My role involves contributing to the development of computer applications using programming languages such as C#, Java, HTML, JS, and CSS.
+                        Through this apprenticeship experience, I am strengthening my technical skills while becoming familiar with best software development practices,
+                        team collaboration, and solving real-world problems.
+                    </p>
+                </div>
+            </div>
+
+            <div class="contentPathContainer">
+                <img src="images/CESI.png">
+                <div class="contentPathInfo">
+                    <a id="pathInfoCESITitle" href="https://nancy.cesi.fr/">CESI école d'ingénieurs</a>
+                    <p>2022-2025</p>
+                    <p id="pathInfoCESIFormation">Master degree in computer engineer as work-study</p>
+                    <a id="pathInfoCompany" href="https://www.predict.fr/">Company : Predict</a>
+                    <p id="pathInfoCESICity">France, Vandœuvre-lès-Nancy, 6 Rue Bois du Chêne le Loup</p>
+                    <p id="pathInfoCESIDesc">
+                        Currently in computer engineering training, I develop both advanced computer skills and expertise in team work.
+                        By specializing in areas such as programming, networking and computer security, I gain in-depth technical expertise.
+                        At the same time, the group projects in which I participate allow me to improve my interpersonal skills, such as communication,
+                        collaboration and team problem-solving, essential qualities for success in the field of computer engineering.
+                    </p>
+                </div>
+            </div>
+
+            <div class="contentPathContainer">
+                <img src="images/IUT.jpg">
+                <div class="contentPathInfo">
+                    <a id="pathInfoIUTTitle" href="https://iut-charlemagne.univ-lorraine.fr/">University institute of technology Nancy-Charlemagne</a>
+                    <p>2020-2022</p>
+                    <p id="pathInfoIUTFormation">Computer science diploma specialized in mathematics for engineers</p>
+                    <p id="pathInfoIUTCity">France, Nancy, 2Ter Bd Charlemagne</p>
+                    <p id="pathInfoIUTDesc">
+                        The computer science with a specialty in mathematics for engineering training allowed me to develop in-depth computer skills
+                        and work effectively as a team. I have acquired expertise in areas such as programming, databases and software design,
+                        while collaborating with my peers on concrete projects. This experience has enabled me not only to strengthen my technical skills,
+                        but also to develop my communication, problem-solving and collaborative skills, which are essential in the professional world of IT.
+                    </p>
+                </div>
+            </div>
+
+            <div class="contentPathContainer">
+                <img src="images/Poincare.jpg">
+                <div class="contentPathInfo">
+                    <a id="pathInfoPoincareTitle" href="https://lycee-poincare.fr/">Highschool Henri Poincaré</a>
+                    <p>2017-2020</p>
+                    <p id="pathInfoPoincareFormation">Scientific baccalaureate with mathematics specialization</p>
+                    <p id="pathInfoPoincareCity">France, Nancy, 2 Rue de la Visitation</p>
+                    <p id="pathInfoPoincareDesc">
+                        This training has enabled me to develop the ability to work rigorously,
+                        analyze complex problems, and apply mathematical methods to solve real-life situations.
+                        These skills have proven valuable to me in various fields, including sciences, engineering, and computer science.
+                    </p>
+                </div>
+            </div>
         </div>
 
-        <div class="contentSkillsContainer">
-          <h2 id="pathSkillsEnvironment">Environment</h2>
-          <ul>
-            <li><img src="images/windows.svg" alt="Windows Icon"><span>Windows</span></li>
-            <li><img src="images/github.svg" alt="Github Icon"><span>Github</span></li>
-            <li><img src="images/visual.svg" alt="Visual Studio Icon"><span>Visual Studio 2022</span></li>
-            <li><img src="images/azure.svg" alt="AzureDevOps Icon"><span>AzureDevOps</span></li>
-          </ul>
+
+        <!--------------------------------- SKILLS ---------------------------------->
+        <div class="content skills" hidden>
+            <h2 id="titleSkills">My skills</h2>
+            <div class="competences">
+
+                <div class="contentSkillsContainer">
+                    <h2 id="pathSkillsWeb">Web</h2>
+                    <ul>
+                        <li>
+                            <img src="images/html.svg" alt="HTML Icon"><span>HTML</span>
+                        </li>
+                        <li><img src="images/js.svg" alt="JavaScript Icon"><span>JavaScript</span></li>
+                        <li><img src="images/css.svg" alt="CSS Icon"><span>CSS</span></li>
+                        <li><img src="images/php.svg" alt="PHP Icon"><span>PHP</span></li>
+                    </ul>
+                </div>
+
+                <div class="contentSkillsContainer">
+                    <h2 id="pathSkillsProgrammingLanguages">Programming languages</h2>
+                    <ul>
+                        <li><img src="images/csharp.svg" alt="C# Icon"><span>C#</span></li>
+                        <li><img src="images/java.svg" alt="Java Icon"><span>Java</span></li>
+                        <li><img src="images/python.svg" alt="Python Icon"><span>Python</span></li>
+                        <li><img src="images/scala.svg" alt="Scala Icon"><span>Scala</span></li>
+                    </ul>
+                </div>
+
+                <div class="contentSkillsContainer">
+                    <h2 id="pathSkillsDB">Database</h2>
+                    <ul>
+                        <li><img src="images/sql.svg" alt="SQL Icon"><span>SQL</span></li>
+                        <li><img src="images/mysql.svg" alt="MySQL Icon"><span>MySQL</span></li>
+                        <li><img src="images/postgresql.svg" alt="PostGreSQL Icon"><span>PostGreSQL</span></li>
+                        <li><img src="images/dbeaver.svg" alt="Dbeaver Icon"><span>DBeaver</span></li>
+                    </ul>
+                </div>
+
+                <div class="contentSkillsContainer">
+                    <h2 id="pathSkillsEnvironment">Environment</h2>
+                    <ul>
+                        <li><img src="images/windows.svg" alt="Windows Icon"><span>Windows</span></li>
+                        <li><img src="images/github.svg" alt="Github Icon"><span>Github</span></li>
+                        <li><img src="images/visual.svg" alt="Visual Studio Icon"><span>Visual Studio 2022</span></li>
+                        <li><img src="images/azure.svg" alt="AzureDevOps Icon"><span>AzureDevOps</span></li>
+                    </ul>
+                </div>
+
+                <div class="contentSkillsContainer">
+                    <h2 id="pathSkillsLanguages">Spoken languages</h2>
+                    <ul>
+                        <li><img src="images/fr.png" alt="france Icon"><span id="french">French - Native</span></li>
+                        <li><img src="images/en.png" alt="english Icon"><span id="english">English - 840 TOEIC (B2)</span></li>
+                        <li><img src="images/ge.png" alt="german Icon"><span id="german">German - A2</span></li>
+                    </ul>
+                </div>
+
+                <div class="contentSkillsContainer">
+                    <h2 id="pathSkillsNonTechnical">Non-technical skills</h2>
+                    <ul>
+                        <li><img src="images/teamWork.png" alt="TeamWork Icon"><span id="teamWorking">Team working</span></li>
+                        <li><img src="images/communication.png" alt="Communication Icon"><span id="communication">Communication</span></li>
+                        <li><img src="images/problemSolving.png" alt="ProblemSolving Icon"><span id="problemSolving">Problem solving</span></li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
 
-        <div class="contentSkillsContainer">
-          <h2 id="pathSkillsLanguages">Spoken languages</h2>
-          <ul>
-            <li><img src="images/fr.png" alt="france Icon"><span id="french">French - Native</span></li>
-            <li><img src="images/en.png" alt="english Icon"><span id="english">English - 840 TOEIC (B2)</span></li>
-            <li><img src="images/ge.png" alt="german Icon"><span id="german">German - A2</span></li>
-          </ul>
+
+        <!--------------------------------- CONTACT-BAR ---------------------------------->
+        <div class="contact-bar">
+            <h2 id="contactTitle">Contact</h2>
+            <div class="social-icons">
+                <a href="#"><img src="images/user.svg" alt="Name"><p id="name">Mathieu MAION</p></a>
+                <a href="http://www.ville-dombasle.fr/"><img src="images/localisation.svg" alt="City"><p id="City">Dombasle-sur-Meurthe</p></a>
+                <a href="mailto:mathieu.maion0@gmail.com"><img src="images/gmail.svg" alt="Email"><p id="email">mathieu.maion0@gmail.com</p></a>
+                <a href="#"><img src="images/phone.svg" alt="Phone"><p id="phone">(+33) 6 15 80 45 34</p></a>
+                <a href="https://github.com/Mathieu-Maion"><img src="images/github.svg" alt="Github"><p>Mathieu-Maion</p></a>
+                <a href="#" id="CV" onclick="showDocument('cv','pdf')"><img id="CVIcon" src="images/downloadPDF.png"><p id="CVText">My resume</p></a>
+                <!--<a href="https://leliteaucesi.fr/"><img src="images/friend.png"><p id="Otherportfolio">My friends portfolio</p></a>-->
+            </div>
+            <h2 id="contactControl">Control</h2>
+            <button id="languageButton" onclick="toggleLanguage()">
+                <div>
+                    <img id="languageIcon1" src="images/fr.png">
+                    <img id="languageIcon2" src="images/en.png">
+                </div>
+                <p id="languageButtonText">English</p>
+            </button>
+
         </div>
 
-        <div class="contentSkillsContainer">
-          <h2 id="pathSkillsNonTechnical">Non-technical skills</h2>
-          <ul>
-            <li><img src="images/teamWork.png" alt="TeamWork Icon"><span id="teamWorking">Team working</span></li>
-            <li><img src="images/communication.png" alt="Communication Icon"><span id="communication">Communication</span></li>
-            <li><img src="images/problemSolving.png" alt="ProblemSolving Icon"><span id="problemSolving">Problem solving</span></li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-    
-
-<!--------------------------------- CONTACT-BAR ---------------------------------->
-    <div class="contact-bar">
-      <h2 id="contactTitle">Contact</h2>
-      <div class="social-icons">
-        <a href="#"><img src="images/user.svg" alt="Name"><p id="name">Mathieu MAION</p></a>
-        <a href="http://www.ville-dombasle.fr/"><img src="images/localisation.svg" alt="City"><p id="City">Dombasle-sur-Meurthe</p></a>
-        <a href="mailto:mathieu.maion0@gmail.com"><img src="images/gmail.svg" alt="Email"><p id="email">mathieu.maion0@gmail.com</p></a>
-        <a href="#"><img src="images/phone.svg" alt="Phone"><p id="phone">(+33) 6 15 80 45 34</p></a>
-        <a href="https://github.com/Mathieu-Maion"><img src="images/github.svg" alt="Github"><p>Mathieu-Maion</p></a>
-        <a href="#" id="CV" onclick="showCV()"><img id="CVIcon" src="images/downloadPDF.png"><p id="CVText">My resume</p></a>
-        <a href="https://leliteaucesi.fr/"><img src="images/friend.png"><p id="Otherportfolio">My friends portfolio</p></a>
-      </div>
-      <h2 id="contactControl">Control</h2>
-      <button id="languageButton" onclick="toggleLanguage()"><img id="languageIcon" src="images/en.png"> <p id="languageButtonText">English</p></button>
- 
-    </div>
-
-  </main>
+    </main>
 </body>
 </html>
