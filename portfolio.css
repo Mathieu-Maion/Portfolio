@@ -176,7 +176,6 @@ main .content:not(.animationDone) {
     font-size: 14px;
     border-radius: 10px;
     background-color: #3badff;
-    padding: 3px;
     margin-right: 8px;
     transition: all .14s ease-out;
     display: flex;
@@ -489,6 +488,7 @@ main .content:not(.animationDone) {
 @media only screen and (min-device-width: 200px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
     body {
         width: calc(100vw + 40px);
+        height: calc(100vh - 430px);
     }
 
     h2 {
@@ -496,7 +496,7 @@ main .content:not(.animationDone) {
     }
 
     body p {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     header {
@@ -515,6 +515,7 @@ main .content:not(.animationDone) {
 
     header .headerMenu {
         flex-direction: column;
+        background-color: unset;
     }
 
     header .headerMenu a.selected {
@@ -557,8 +558,18 @@ main .content:not(.animationDone) {
 
     .contentAboutMeContainer img {
         height: auto;
-        width: 80%;
-        align-self: center;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .contentProjectContainer span {
+        font-size: 24px;
+        margin-right: 10px;
+        padding: 10px;
+    }
+
+    .path .contentPathContainer {
+        margin: 40px 0;
     }
 
     .contact-bar {
@@ -593,6 +604,20 @@ main .content:not(.animationDone) {
     .contact-bar button > p {
         font-size: 40px;
         margin: auto 0 auto 10px
+    }
+
+    #languageButton > div {
+        left: 0;
+    }
+
+    #languageIcon1 {
+        height: 70px;
+        top: -16px;
+        left: 16px;
+    }
+
+    #languageIcon2 {
+        height: 70px;
     }
 
     .slide {
